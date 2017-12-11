@@ -5,6 +5,6 @@ $('a').click (function (e) {
    setTimeout(function () {
    		console.log(url);
        window.location.href = url; //will redirect to your blog page (an ex: blog.html)
-    }, 1500); //will call the function after 2 secs.
+    }, 2000); //will call the function after 2 secs.
 
 });

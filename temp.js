@@ -1,4 +1,5 @@
-$('a').click (function (e) {
+$('.hex-container a').click (function (e) {
+	// alert("words");
 	var url=this.getAttribute("href");
    e.preventDefault(); //will stop the link href to call the blog page
 

@@ -33,14 +33,14 @@ a {
 }
 
 #toggle:focus ~ .toggle-container .button-toggle {
-  /*box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #toggle:checked ~ .toggle-container .button-toggle {
-  /*box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #toggle:checked ~ .toggle-container .button-toggle:hover {
-  /*box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #toggle:checked ~ .toggle-container .button-toggle:before {
   transform: translateY(-50%) rotate(45deg) scale(1);
@@ -52,9 +52,9 @@ a {
   box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #toggle:checked ~ .nav {
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
   pointer-events: auto;
-  transform: translate(calc(50vw - 56px), 50px);
+  transform: translate(50px, 50px);
 }
 #toggle:checked ~ .nav .nav-item {
   color: #EC7263;
@@ -231,7 +231,7 @@ a {
 }
  .card {
  	white-space: normal;
- 	height: calc(100vh - 26px);
+ 	height: calc(100vh - 80px);
  	display: inline-block;
  }
 #card1
@@ -269,4 +269,14 @@ a {
 #card9
 {
 	background: #ffcccc;
+}
+.nav
+{
+  /*position: relative;*/
+}
+#navlogo img
+{
+  position: absolute;
+  top: -310px;
+  /*right: calc(100px - 100vw);*/
 }

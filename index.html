@@ -1,357 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>nav testing</title>
-  <link rel="stylesheet" type="text/css" href="naveffects.css">
-  <link rel="stylesheet" type="text/css" href="effects.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test</title>
+
+	<link rel="stylesheet" type="text/css" href="effects.css">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
 </head>
 <body>
-<div id="nav-bg" class="btn"></div>
-<div id="toggle-btn" class="btn">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+  <div class="container">
+    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+    <input id="toggle" type="checkbox">
 
-<div class="wrapper">
-  <nav>
-    <ul>
-      <li><a class="link" href="index.html">Main</a></li>
-      <li><a class="link" href="events.html">Events</a></li>
-      <!-- <li><a class="link" href="#0">Contact</a></li> -->
-    </ul>
-  </nav>
-  
-  <div id="content">
-<div class="hex-container">
-  <div class="hex-grid">
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/eddie.jpg);">
-          <div class="-inner">
-            <h3>Title....</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media2.giphy.com/media/11i7RuOORxP7iM/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/ralph.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media3.giphy.com/media/3KWHzadf2Iq64/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/paul.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media3.giphy.com/media/PG7Xa4B58XhqE/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="hex-grid">
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/mike.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media0.giphy.com/media/PC3PhzppXcK5y/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/brandi.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media0.giphy.com/media/j9bRkg7HJiDMA/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="hex-grid">
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/caitlyn.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media2.giphy.com/media/AXJxMvKjJsKMo/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/chris.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media.giphy.com/media/Y1LlFX97M150k/giphy-tumblr.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/dylan.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media4.giphy.com/media/ziauh5HAPzVhC/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="hex-grid">
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/francis.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media2.giphy.com/media/QupZ48l99NAKA/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/gavin.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media2.giphy.com/media/X50rBGldq5YB2/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-  </div>
-<!--   <div class="hex-grid">
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/jereme.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media0.giphy.com/media/qJrFbfOeLuRNe/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/john.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media4.giphy.com/media/NDw25ETINa1ck/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/jordan-m.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media.giphy.com/media/zAYZOtH5OMhuU/giphy-tumblr.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-  </div> -->
-<!--   <div class="hex-grid">
-    <a href="events.html" onclick="return false;" class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/jordan.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media0.giphy.com/media/1237EvS8dYtWIU/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    <a href="events.html" onclick="return false;" " class="-hex">
-      <div class="-hex-wrap">
-        <div class="-card -front" style="background-image: url(https://www.teamcolab.com/static/img/headshot/josh.jpg);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-        <div class="-card -back" style="background-image: url(http://media0.giphy.com/media/Y8hzdgPnZ6Hwk/giphy.gif);">
-          <div class="-inner">
-            <h3>Title</h3>
-            <p>description</p>
-          </div>
-          <div class="-clip -left"></div>
-          <div class="-clip -right"></div>
-        </div>
-      </div>
-    </a>
-    
-  </div> -->
+    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+    <label class="toggle-container" for="toggle">
+        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+        <span class="button button-toggle"></span>
+    </label>
+
+    <!-- The nav menu -->
+    <nav class="nav">
+        <a class="nav-item" href="">Dashboard</a>
+        <a class="nav-item" href="">History</a>
+        <a class="nav-item" href="">Statistics</a>
+        <a class="nav-item" href="">Settings</a>
+    </nav>
+
+    <!-- Just dummy content like in the animated gif -->
+<div id="scrolling-wrapper">
+  <div class="card" id="card1"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card2"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card3"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card4"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card5"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card6"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card7"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card8"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+  <div class="card" id="card9"><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
 </div>
-  </div>
-</div>
-<script src="jquery.min.js"></script>
-<script src="temp.js"></script>
-<script src="navtemp.js"></script>
+<script>
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('scrolling-wrapper').scrollLeft -= (delta*80); // Multiplied by 40
+        e.preventDefault();
+    }
+    if (document.getElementById('scrolling-wrapper').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('scrolling-wrapper').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('scrolling-wrapper').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('scrolling-wrapper').attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();
+</script>
 </body>
 </html>

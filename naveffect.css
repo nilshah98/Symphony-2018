@@ -18,9 +18,9 @@ a {
 
 .container {
   position: relative;
-  /*margin: 35px auto 0;*/
-  /*width: 300px;*/
-  /*height: 534px;*/
+  margin: 35px auto 0;
+  width: 300px;
+  height: 534px;
   background-color: #533557;
   overflow: hidden;
 }
@@ -203,70 +203,79 @@ a {
   transform: translateY(-50%) scaleY(5);
   transition: 0.5s;
 }
-/*custom scroll bars*/
-#scrolling-wrapper::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+
+/* Dummy content */
+.dummy-content {
+  position: relative;
+  text-align: center;
+  transition: 0.5s;
+}
+.dummy-content:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 2;
+  transition: 0.5s;
 }
 
-#scrolling-wrapper::-webkit-scrollbar
-{
-	height: 10px;
-	width: 10px;
-	background-color: #F5F5F5;
+.circle {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  background-color: #EC7263;
+  border-radius: 100%;
 }
 
-#scrolling-wrapper::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
-	border: 2px solid #555555;
+.text {
+  margin: 15px 0 30px;
+}
+.text span {
+  display: inline-block;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #C06162;
+  border-radius: 5px;
+}
+.text span:first-child {
+  width: 50px;
+}
+.text span:last-child {
+  width: 80px;
 }
 
-/*horizontal scroll*/
-#scrolling-wrapper {
-  overflow-x: auto;
-  /*overflow-y: hidden;*/
-  white-space: nowrap;
+.square-top {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  background-color: #FEBE7E;
+  z-index: 1;
 }
- .card {
- 	white-space: normal;
- 	height: calc(100vh - 26px);
- 	display: inline-block;
- }
-#card1
-{
-	background: #ff0000;
+
+.square-behind {
+  display: inline-block;
+  position: relative;
+  top: -256px;
+  width: 250px;
+  height: 210px;
+  background-color: #C28683;
 }
-#card2
-{
-	background: #ff1919;
+.square-behind:before, .square-behind:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 40%;
+  height: 100%;
 }
-#card3
-{
-	background: #ff3232;
+.square-behind:before {
+  left: 0;
+  background-color: #9D567C;
 }
-#card4
-{
-	background: #ff4c4c;
-}
-#card5
-{
-	background: #ff6666;
-}
-#card6
-{
-	background: #ff7f7f;
-}
-#card7
-{
-	background: #ff9999;
-}
-#card8
-{
-	background: #ffb2b2;
-}
-#card9
-{
-	background: #ffcccc;
+.square-behind:after {
+  right: 0;
+  background-color: #958C6B;
 }

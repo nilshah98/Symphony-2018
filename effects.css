@@ -52,7 +52,7 @@ a {
   box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #toggle:checked ~ .nav {
-  /*margin-bottom: 100px;*/
+  margin-bottom: 100px;
   pointer-events: auto;
   transform: translate(50px, 50px);
 }
@@ -274,9 +274,21 @@ a {
 {
   /*position: relative;*/
 }
-#navlogo img
+#navlogo
 {
-  position: absolute;
-  top: -310px;
-  /*right: calc(100px - 100vw);*/
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+@media only screen and (max-width: 500px)
+{
+  #navlogo
+  {
+    top:9px;
+  }
+  #navlogo img
+  {
+    width: 150px;
+    height: auto;
+  }
 }

@@ -248,7 +248,7 @@ a {
 	height: calc(100vh - 80px) !important;
 	width: auto;
 }
-@media only screen and (max-aspect-ratio: 5/3)
+@media only screen and (max-width:1100px)
 {
 	.desktopimg, .mobileimg
 	{
@@ -259,7 +259,7 @@ a {
 		display: inline-block;
 	}
 }
-@media only screen and (max-aspect-ratio: 8/10)
+@media only screen and (max-width:500px)
 {
 	.desktopimg, .tabletimg
 	{

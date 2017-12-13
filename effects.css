@@ -225,7 +225,7 @@ a {
 
 /*horizontal scroll*/
 #scrolling-wrapper {
-	font-size: 0px;
+	/*font-size: 0px;*/
 	overflow-x: auto;
 	/*overflow-y: hidden;*/
 	white-space: nowrap;
@@ -238,7 +238,7 @@ a {
 	max-height: calc(100vh - 80px);
 	display: inline-block;
 }
-.mobileimg
+.mobileimg, .tabletimg
 {
 	display: none;
 }
@@ -248,9 +248,20 @@ a {
 	height: calc(100vh - 80px) !important;
 	width: auto;
 }
-@media only screen and (max-width: 500px)
+@media only screen and (max-aspect-ratio: 5/3)
 {
-	.desktopimg
+	.desktopimg, .mobileimg
+	{
+		display: none;
+	}
+	.tabletimg
+	{
+		display: inline-block;
+	}
+}
+@media only screen and (max-aspect-ratio: 7/10)
+{
+	.desktopimg, .tabletimg
 	{
 		display: none;
 	}
@@ -259,6 +270,7 @@ a {
 		display: inline-block;
 	}
 }
+
 /*#card1
 {
 	background: #ff0000;

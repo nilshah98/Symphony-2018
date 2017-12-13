@@ -231,10 +231,32 @@ a {
 }
  .card {
  	white-space: normal;
- 	height: calc(100vh - 80px);
+  max-width: 100vw;
+ 	height: auto;
+  max-height: calc(100vh - 80px);
  	display: inline-block;
  }
-#card1
+ .mobileimg
+ {
+  display: none;
+ }
+ .card img
+ {
+  height: calc(100vh - 84px) !important;
+  width: auto;
+ }
+ @media only screen and (max-width: 500px)
+ {
+  .desktopimg
+  {
+    display: none;
+  }
+  .mobileimg
+  {
+    display: inline-block;
+  }
+ }
+/*#card1
 {
 	background: #ff0000;
 }
@@ -269,7 +291,7 @@ a {
 #card9
 {
 	background: #ffcccc;
-}
+}*/
 .nav
 {
   /*position: relative;*/
@@ -291,4 +313,12 @@ a {
     width: 150px;
     height: auto;
   }
+}
+.card:nth-child(odd)
+{
+  background: red;
+}
+.card:nth-child(even)
+{
+  background: green;
 }

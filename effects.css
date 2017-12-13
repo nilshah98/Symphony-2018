@@ -225,12 +225,13 @@ a {
 
 /*horizontal scroll*/
 #scrolling-wrapper {
+	font-size: 0px;
 	overflow-x: auto;
 	/*overflow-y: hidden;*/
 	white-space: nowrap;
 }
 .card {
-	margin-right: -4px;
+	/*margin-right: -4px;*/
 	white-space: normal;
 	max-width: 100vw;
 	height: auto;
@@ -243,7 +244,7 @@ a {
 }
 .card img
 {
-	margin-bottom: -4px;
+	/*margin-bottom: -4px;*/
 	height: calc(100vh - 80px) !important;
 	width: auto;
 }

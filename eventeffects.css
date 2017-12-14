@@ -253,14 +253,14 @@ p {
     /*padding-top:40%;*/
   }
 }
-@media only screen and (max-width:500px)
+/*@media only screen and (max-width:500px)
 {
   .card
   {
     width: 80%;
-    /*padding-top: 80%;*/
   }
-}
+}*/
+
 /* Basic styles */
 * {
   box-sizing: border-box;

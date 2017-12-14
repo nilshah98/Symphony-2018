@@ -1,3 +1,44 @@
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '\f11b';
+}
+
+label[for*='2']:before {
+  content: '\f0d0';
+}
+
+label[for*='3']:before {
+  content: '\f17d';
+}
+
+label[for*='4']:before {
+  content: '\f2a7';
+}
+
+label[for*='5']:before {
+  content: '\f1fc';
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
 /* boring stuff ie. content*/
 * {
   box-sizing: border-box;
@@ -8,7 +49,7 @@ html,body
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
 }
 
 html, body {
@@ -29,7 +70,9 @@ body {
 }
 
 .eventcontainer {
-  margin: 0 auto;
+  margin:auto;
+  margin-top: calc(20vh - 60px);
+  margin-bottom: calc(20vh - 60px);
   display: block;
   max-width: 800px;
 }
@@ -42,7 +85,20 @@ body {
 {
   margin: 5px;
 }
-
+.eventheading
+{
+  display: none;
+  width: 100%;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 600;
+}
+@media screen and (max-width: 650px){
+  .eventheading
+  {
+    display: block;
+  }
+}
 .tab__content
 {
   max-height: 60vh;
@@ -132,7 +188,7 @@ a {
   position: relative;
   list-style: none;
   background-color: #fff;
-  margin: 40px 0;
+  /*margin: 40px 0;*/
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }

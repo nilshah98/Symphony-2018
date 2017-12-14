@@ -196,7 +196,7 @@ body {
 
 .tab__content
 {
-  max-height: 40vh;
+  height: 60vh;
   overflow: auto;
 }
 
@@ -224,4 +224,21 @@ h3 {
 p {
   line-height: 1.6;
   margin-bottom: 20px;
+}
+.tab__content
+{
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.card
+{
+  background: darkslategray;
+  width: 30%;
+  height: calc(50% - 20px);
+  margin: 10px auto;
 }

@@ -6,10 +6,30 @@
 	<link rel="stylesheet" type="text/css" href="eventeffects.css">
 </head>
 <body>
-<h1>CSS Tabs</h1>
-<h2>Transitioning Between Variable Heights</h2>
-
 <div class="container">
+      <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+    <input id="toggle" type="checkbox">
+
+    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+    <label class="toggle-container" for="toggle">
+        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+        <span class="button button-toggle"></span>
+    </label>
+
+    <!-- The nav menu -->
+    <nav class="nav">
+        <a class="nav-item" href="">Dashboard</a>
+        <a class="nav-item" href="">History</a>
+        <a class="nav-item" href="">Statistics</a>
+        <a class="nav-item" href="">Settings</a>
+        <a class="nav-item" href="">Settings</a>
+        <a class="nav-item" href="">Settings</a>
+        <!-- <a id="navlogo" class="nav-item" href=""><img src="logo.png" style="height: 70px; width: auto;"></a> -->
+    </nav>
+  </div>
+  <div class="eventcontainer">
   <div class="tab-wrap">
 
     <!-- active tab on page load gets checked attribute -->
@@ -23,16 +43,16 @@
     <label for="tab3">Long</label>
 
     <div class="tab__content">
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
-      <div class="card"><img src="dummyevent.png" style="width: 100%; height: auto;"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"s><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
+      <div class="card"><img src="dummyevent.png"><h4 class="eventtitle">Lorem Ipsum</h4></div>
     </div>
 
     <div class="tab__content">
@@ -54,8 +74,6 @@
     </div>
 
   </div>
-
-  
 </div>
 </body>
 </html>

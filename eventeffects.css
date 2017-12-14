@@ -34,11 +34,13 @@ label[for*='5']:before {
   }
 }
 
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 400px) {
   label {
     padding: 15px;
   }
-}
+}*/
+
+
 /* boring stuff ie. content*/
 * {
   box-sizing: border-box;

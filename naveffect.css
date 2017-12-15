@@ -6,6 +6,13 @@
 html, body {
 	margin: 0;
 }
+html,body
+{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  /*overflow-y: hidden;*/
+}
 
 body {
 	font-family: sans-serif;
@@ -25,54 +32,6 @@ a {
 	overflow: hidden;
 }
 
-
-/*=====================================================================*/
-
-
-/*horizontal scroll*/
-#scrolling-wrapper {
-	/*to make margin disappear-*/
-	font-size: 0px;
-	overflow-x: auto;
-	/*overflow-y: hidden;*/
-	white-space: nowrap;
-}
-.card {
-	/*margin-right: -4px;*/
-	white-space: normal;
-	width: 100vw;
-	height: calc(100vh - 80px);
-	display: inline-block;
-	background-image: url("desktop.png") ;
-	/*background-attachment: fixed;*/
-	background-position: center ;
-	background-repeat: no-repeat ;
-	background-size: cover ;
-}
-
-/*@media only screen and (max-width:1100px)
-{
-	.card
-	{
-		background-image: url("tablet.png") ;
-	}
-}
-@media only screen and (max-width:500px)
-{
-	.card
-	{
-		background-image: url("mobile.png") ;
-	}
-}*/
-
-/*mobile landscape*/
-/*@media only screen and (min-device-width: 480px) and (max-device-width: 825px) and (orientation: landscape) {
-    .card
-    {
-        background-image: url("desktop.png");
-    }
-}*/
-
 #navlogo
 {
 	position: absolute;
@@ -91,47 +50,6 @@ a {
 		height: auto;
 	}
 }
-
-@media screen and (max-aspect-ratio: 134/100)
-{
-	.card
-	{
-		background-image: url("tablet.png");
-	}
-}
-@media screen and (max-aspect-ratio: 7/10)
-{
-	.card
-	{
-		background-image: url("mobile.png");
-	}
-}
-/*=====================================================================*/
-
-/*custom scroll bars*/
-#scrolling-wrapper::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #422446;
-}
-
-#scrolling-wrapper::-webkit-scrollbar
-{
-	height: 10px;
-	width: 10px;
-	background-color: #422446;
-}
-
-#scrolling-wrapper::-webkit-scrollbar-thumb
-{
-	background-color: #EC7263;
-	border-radius: 5px;
-	/*border: 2px solid #555555;*/
-}
-
-
-/*=====================================================================*/
-
 
 /* Toggle functionality https://codepen.io/lmgonzalves/pen/KaWaJO */
 #toggle {

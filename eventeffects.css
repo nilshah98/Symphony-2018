@@ -119,7 +119,24 @@ label[for*='5']:before {
     font-size: 18px;
   }
 }
-
+#navlogo
+{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+@media only screen and (max-width: 500px)
+{
+  #navlogo
+  {
+    top:9px;
+  }
+  #navlogo img
+  {
+    width: 150px;
+    height: auto;
+  }
+}
 .card-container
 {
   cursor: pointer;

@@ -2,13 +2,15 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Events</title>
-	<link rel="stylesheet" type="text/css" href="eventeffects.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>test</title>
+
+	<link rel="stylesheet" type="text/css" href="effects.css">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
 </head>
 <body>
-<div class="container">
-      <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+  <div class="container">
+    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
     <input id="toggle" type="checkbox">
 
     <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
@@ -29,352 +31,40 @@
         <a class="nav-item" href="">Settings</a>
         <!-- <a id="navlogo" class="nav-item" href=""><img src="logo.png" style="height: 70px; width: auto;"></a> -->
     </nav>
-  </div>
-  <div class="eventcontainer">
-  <div class="tab-wrap">
 
-    <!-- active tab on page load gets checked attribute -->
-    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
-    <label for="tab1">Competitions</label>
-
-    <input type="radio" id="tab2" name="tabGroup1" class="tab">
-    <label for="tab2">Pre-Events</label>
-
-    <input type="radio" id="tab3" name="tabGroup1" class="tab">
-    <label for="tab3">Shield</label>
-
-    <input type="radio" id="tab4" name="tabGroup1" class="tab">
-    <label for="tab4">Informals</label>
-
-    <input type="radio" id="tab5" name="tabGroup1" class="tab">
-    <label for="tab5">Workshops</label>
-
-    <div class="tab__content">
-
-      <div class="eventheading">Competitions</div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback1">
-            <!-- <img src="https://media.giphy.com/media/3oxHQF1VVgH16wLmxy/giphy.gif"> -->
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback2">
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback3">
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback4">
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="tab__content">
-      <div class="eventheading">Pre-Events</div>
-      
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-    
-
-    </div>
-
-
-
-    <div class="tab__content">
-      <div class="eventheading">Shield</div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tab__content">
-      <div class="eventheading">Informals</div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tab__content">
-      <div class="eventheading">Workshops</div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-      <div class="card-container">
-        <img src="dummyevent.png">
-        <h4 class="eventtitle">Lorem Ipsum</h4>
-        <div class="card">
-          <div class="side">
-            <img src="dummyevent.png">
-            <h4 class="eventtitle">Lorem Ipsum</h4>
-          </div>
-          <div class="side back" id="oneback5">
-          </div>
-        </div>
-      </div>
-    
-    </div>
-
-  </div>
+    <!-- Just dummy content like in the animated gif -->
+<div id="navlogo"><img src="dummy.png"></div>
+<div id="scrolling-wrapper">
+  <div class="card" id="card1"></div>
+  <div class="card" id="card2"></div>
+  <div class="card" id="card3"></div>
+  <div class="card" id="card4"></div>
+  <div class="card" id="card5"></div>
+  <div class="card" id="card6"></div>
+  <div class="card" id="card7"></div>
+  <div class="card" id="card8"></div>
+  <div class="card" id="card9"></div>
 </div>
+<script>
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        // console.log(e);
+        // console.log(Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('scrolling-wrapper').scrollLeft -= (delta*80); // Multiplied by 40
+        e.preventDefault();
+    }
+    if (document.getElementById('scrolling-wrapper').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('scrolling-wrapper').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('scrolling-wrapper').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('scrolling-wrapper').attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();
+</script>
 </body>
 </html>

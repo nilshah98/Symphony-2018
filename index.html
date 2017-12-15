@@ -5,10 +5,18 @@
 	<title>Home</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/effects.css">
+  <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script> -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
 </head>
 <body>
+      <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+    </div>
   <div class="container">
     <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
     <input id="toggle" type="checkbox">
@@ -45,6 +53,8 @@
   <div class="card" id="card8"></div>
   <div class="card" id="card9"></div>
 </div>
+<script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
 <script>
 (function() {
     function scrollHorizontally(e) {

@@ -24,7 +24,12 @@ a {
 	background-color: #533557;
 	overflow: hidden;
 }
-
+.container
+{
+    -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
+       -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
+}
 
 /*=====================================================================*/
 

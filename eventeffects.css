@@ -1,10 +1,87 @@
+.card-container
+{
+  cursor: pointer;
+  perspective: 600;
+  position: relative;
+}
+.card-container
+{
+  /*background: #422446;*/
+  width: 30%;
+  /*height: 100%;*/
+  /*padding-top: 30%;*/
+  margin: 10px auto;
+}
+.card-container>img
+{
+  width: 100%;
+  height: auto;
+  visibility: hidden;
+}
+.card-container>h4
+{
+  visibility: hidden;
+}
+
+.card img
+{
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width:1100px)
+{
+  .card-container
+  {
+    width: 40%;
+  }
+}
+.card
+{
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+}
+.card-container:hover .card{
+  transform: rotateY(180deg);
+}
+.card .side {
+  border-radius: 6px;
+  background:#422447;
+  backface-visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.card .back {
+  border-radius: 6px;
+  background: transparent;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+  background-image: url("https://media.giphy.com/media/3oxHQF1VVgH16wLmxy/giphy.gif");
+  /*background-attachment: fixed;*/
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
+}
+#oneback1
+{
+  background-image: url("https://media.giphy.com/media/3oxHQF1VVgH16wLmxy/giphy.gif");
+}
 .tab-wrap
 {
-  background:transparent !important;
+  background:linear-gradient(rgba(83,53,87,1), rgba(83,53,87,1)) !important;
 }
 .tab__content
 {
-  background:linear-gradient(rgba(83,53,87,1), rgba(83,53,87,1));
+  background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0));
 }
 /* boring stuff ie. content*/
 * {
@@ -79,26 +156,7 @@ body {
   /*align-content: center;*/
 }
 
-.card
-{
-  background: #422446;
-  width: 30%;
-  /*padding-top: 30%;*/
-  margin: 10px auto;
-}
 
-.card img
-{
-  width: 100%;
-  height: auto;
-}
-@media only screen and (max-width:1100px)
-{
-  .card
-  {
-    width: 40%;
-  }
-}
 
 
 a {

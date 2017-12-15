@@ -99,7 +99,7 @@ a {
 		background-image: url("tablet.png");
 	}
 }
-@media screen and (max-aspect-ratio: 75/100)
+@media screen and (max-device-aspect-ratio: 7/10)
 {
 	.card
 	{

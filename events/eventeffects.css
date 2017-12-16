@@ -37,7 +37,10 @@
   background-color: #EC7263;
   border-radius: 5px;
 }
-
+#content
+{
+  overflow: hidden !important;
+}
 /*back button*/
 .previous {
   text-decoration: none;

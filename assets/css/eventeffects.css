@@ -1,3 +1,18 @@
+.card
+{
+  border-radius: 6px;
+  -webkit-transition: 0.3s -webkit-box-shadow ease;
+  transition: 0.3s -webkit-box-shadow ease;
+  transition: 0.3s box-shadow ease;
+  transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+}
+.card:hover {
+  -webkit-box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
+
 /* boring stuff ie. content*/
 * {
   box-sizing: border-box;
@@ -156,6 +171,7 @@ label[for*='5']:before {
   /*height: 100%;*/
   /*padding-top: 30%;*/
   margin: 10px auto;
+  border-radius: 6px;
 }
 .card-container>img
 {
@@ -218,7 +234,15 @@ label[for*='5']:before {
 }
 #back-1
 {
-  /*background-image: url("https://media.giphy.com/media/3oxHQF1VVgH16wLmxy/giphy.gif");*/
+  background-image: url("https://media.giphy.com/media/l0CLTArWi294NNu9i/giphy.gif");
+}
+#back-4
+{
+  background-image: url("https://media.giphy.com/media/xUOxf7YSKQwK9ztvws/giphy.gif");
+}
+#back-5
+{
+  background-image: url("https://media.giphy.com/media/3oxHQF1VVgH16wLmxy/giphy.gif");
 }
 .tab-wrap
 {

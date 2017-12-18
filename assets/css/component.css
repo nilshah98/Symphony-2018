@@ -226,7 +226,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 }*/
 
 .main {
-  overflow: auto;
+  overflow: hidden;
   display: inline-block;
   position: relative;
   left: 50%;

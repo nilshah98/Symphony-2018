@@ -118,7 +118,7 @@ p {
   /*background: #755779;*/
   color: #fff;
   /*font-size: 17px;*/
-  /*line-height: 26px;*/
+  line-height: 1.5em;
   /*letter-spacing: 1px;*/
   position: relative;
   overflow: hidden;
@@ -178,9 +178,11 @@ ul li i:before, ul li i:after {
 
 ul li i:before {
   transform: translate(-2px, 0) rotate(45deg);
+  transition-delay: 0.25s;
 }
 
 ul li i:after {
+  transition-delay: 0.25s;
   transform: translate(2px, 0) rotate(-45deg);
 }
 
@@ -202,9 +204,12 @@ ul li input[type=checkbox]:checked ~ p {
 
 ul li input[type=checkbox]:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
+  transition-delay: 0.25s;
+
 }
 
 ul li input[type=checkbox]:checked ~ i:after {
+  transition-delay: 0.25s;
   transform: translate(-2px, 0) rotate(-45deg);
 }
 

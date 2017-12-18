@@ -42,14 +42,14 @@ hr
   color: #ddd;
   /*background: rgba(0,0,0,0.2);*/
   padding: 20px;
-  /*max-width: 520px;*/
+  max-width: 1000px;
 	margin: 20px auto;
   /*-webkit-box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
           /*box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
 }
 
 p {
-	font-size: 1rem; 
-	line-height: 1.5rem;
-	text-indent: 2.5rem;
+	/*font-size: 1rem; */
+	line-height: 1.5em;
+	/*text-indent: 2.5rem;*/
 }

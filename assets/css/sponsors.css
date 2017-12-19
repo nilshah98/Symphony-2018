@@ -118,7 +118,7 @@ body
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-left: 15px;
-  box-shadow: -10px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: -1px 0px 5px rgba(0,0,0,0.2);
 }
 
 .tab:not(:first-of-type):not(:last-of-type) + label {
@@ -128,7 +128,7 @@ body
 .tab:last-of-type:not(:first-of-type) + label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  box-shadow: 10px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 1px 0px 5px rgba(0,0,0,0.2);
 }
 
 .tab:checked + label {

@@ -14,7 +14,7 @@
 .trigger
 {
 	position: absolute;
-	background: rgba(0,0,0,0.5);
+	/*background: rgba(0,0,0,0.5);*/
 	width:20vw;
 	height:60vh;
 	z-index: 100;
@@ -46,7 +46,7 @@
 	opacity: 0;
 	left: 25vw;
 	width: 20vw;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.2);
 	height: auto;
 }
 #textcard3
@@ -54,7 +54,7 @@
 	opacity: 0;
 	left: 50vw;
 	width:20vw;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.2);
 	height: auto;
 }
 #textcard4
@@ -62,7 +62,7 @@
 	opacity: 0;
 	right: 0px;
 	width:20vw;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.2);
 	height: auto;
 }
 

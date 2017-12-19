@@ -1,18 +1,21 @@
 /*codepen tabs https://codepen.io/fusco/pen/Wvzjrm*/
 body
 {
-  background: #FFF;
+  background: #7B295C;
 }
 .content
 {
-	padding-top: 10px;
+  height:calc(100vh - 70px);
+  /*max-height:calc(100vh - 70px); */
 	color: #000;
+  overflow: hidden;
 }
 .content h6
 {
   text-align: center;
 }
 .tab-wrap {
+  max-height: calc(100vh - 70px);
   -webkit-transition: 0.3s -webkit-box-shadow ease;
   transition: 0.3s -webkit-box-shadow ease;
   transition: 0.3s box-shadow ease;
@@ -114,6 +117,8 @@ body
 .tab:first-of-type:not(:last-of-type) + label {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  margin-left: 15px;
+  box-shadow: -10px 0px 10px rgba(0,0,0,0.2);
 }
 
 .tab:not(:first-of-type):not(:last-of-type) + label {
@@ -123,25 +128,24 @@ body
 .tab:last-of-type:not(:first-of-type) + label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  box-shadow: 10px 0px 10px rgba(0,0,0,0.2);
 }
 
 .tab:checked + label {
-  background-color: #533557;
-  -webkit-box-shadow: 0 -1px 0 #555 inset;
-          box-shadow: 0 -1px 0 #555 inset;
+  background-color: #9A3767;
   cursor: default;
 }
 
 .tab + label:hover {
   -webkit-box-shadow: 0 -1px 0 #555 inset;
           box-shadow: 0 -1px 0 #555 inset;
-  background-color: #533557;
+  background-color: #9A3767;
 }
 
 .tab + label {
 	max-width: 100px;
-  -webkit-box-shadow: 0 -1px 0 #533557 inset;
-          box-shadow: 0 -1px 0 #533557 inset;
+  -webkit-box-shadow: 0 -1px 0 #9A3767 inset;
+          box-shadow: 0 -1px 0 #9A3767 inset;
   border-radius: 6px 6px 0 0;
   cursor: pointer;
   display: block;
@@ -151,7 +155,7 @@ body
       -ms-flex-positive: 3;
           flex-grow: 3;
   text-align: center;
-  background-color: #755779;
+  background-color: #7B295C;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -168,6 +172,9 @@ body
 }
 
 .tab__content {
+  height: calc(100vh - 120px);
+  overflow: auto;
+  background: #FFF !important;
   padding: 10px 25px;
   background-color: transparent;
   position: absolute;

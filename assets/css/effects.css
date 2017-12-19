@@ -250,18 +250,30 @@ a {
 
 @media screen and (max-aspect-ratio: 735/1000)
 {
-	.card
+	#card1
 	{
-		background-image: url("../images/bgs/tablet.png") !important;
+		background-image: url("../images/bgs/mob1.png") !important;
+	}
+	#card2
+	{
+		background-image: url("../images/bgs/mob2.png") !important;
+	}
+	#card3
+	{
+		background-image: url("../images/bgs/mob3.png") !important;
+	}
+	#card4
+	{
+		background-image: url("../images/bgs/mob4.png") !important;
 	}
 }
-@media screen and (max-aspect-ratio: 560/1000)
+/*@media screen and (max-aspect-ratio: 560/1000)
 {
 	.card
 	{
 		background-image: url("../images/bgs/mobile.png") !important;
 	}
-}
+}*/
 /*=====================================================================*/
 
 /*custom scroll bars*/

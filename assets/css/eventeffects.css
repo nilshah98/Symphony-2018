@@ -250,7 +250,7 @@ label[for*='5']:before {
 }
 .tab-wrap
 {
-  background:linear-gradient(#9A3767,#7B295C) !important;
+  background: #9A3767 !important;
 }
 .tab__content
 {

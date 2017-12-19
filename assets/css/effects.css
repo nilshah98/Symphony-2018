@@ -17,6 +17,7 @@
 	background: rgba(0,0,0,0.5);
 	width:20vw;
 	height:60vh;
+	z-index: 100;
 }
 #trigger1
 {
@@ -46,6 +47,7 @@
 	left: 25vw;
 	width: 20vw;
 	background: rgba(0,0,0,0.5);
+	height: auto;
 }
 #textcard3
 {
@@ -53,6 +55,7 @@
 	left: 50vw;
 	width:20vw;
 	background: rgba(0,0,0,0.5);
+	height: auto;
 }
 #textcard4
 {
@@ -60,6 +63,7 @@
 	right: 0px;
 	width:20vw;
 	background: rgba(0,0,0,0.5);
+	height: auto;
 }
 
 #trigger1:hover ~ #textcard2

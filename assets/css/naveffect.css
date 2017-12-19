@@ -15,8 +15,8 @@ html,body
 }
 
 body {
-	font-family: sans-serif;
-	background-color: #755779;
+	font-family: Lato;
+	background-color: #7B295C;
 }
 
 a {
@@ -28,7 +28,7 @@ a {
 	/*margin: 35px auto 0;*/
 	/*width: 300px;*/
 	/*height: 534px;*/
-	background-color: #533557;
+	background: linear-gradient(to right, #9A3767 , #7B295C);
 	overflow: hidden;
 }
 .container

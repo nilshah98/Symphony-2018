@@ -27,7 +27,7 @@
 
 .main::-webkit-scrollbar-thumb
 {
-  background-color: #EC7263;
+  background-color: #FB736A;
   border-radius: 5px;
 }
 
@@ -39,7 +39,7 @@
   font-size: 0.6em;
   border-radius: 50%;
   background-color: #755779;
-  color: #EC7263;
+  color: #FB736A;
 }
 .previous:hover {
     background-color: #533557;
@@ -90,7 +90,7 @@ html {
 }*/
 
 h1, h2 {
-  color: #EC7263;
+  color: #FB736A;
 }
 
 h1 {
@@ -171,18 +171,18 @@ ul li i {
 ul li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #EC7263;
+  background-color: #FB736A;
   width: 3px;
   height: 9px;
 }
 
 ul li i:before {
   transform: translate(-2px, 0) rotate(45deg);
-  transition-delay: 0.25s;
+  transition-delay: 0.15s;
 }
 
 ul li i:after {
-  transition-delay: 0.25s;
+  transition-delay: 0.15s;
   transform: translate(2px, 0) rotate(-45deg);
 }
 
@@ -204,12 +204,12 @@ ul li input[type=checkbox]:checked ~ p {
 
 ul li input[type=checkbox]:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
-  transition-delay: 0.25s;
+  transition-delay: 0.15s;
 
 }
 
 ul li input[type=checkbox]:checked ~ i:after {
-  transition-delay: 0.25s;
+  transition-delay: 0.15s;
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -250,7 +250,7 @@ ul li input[type=checkbox]:checked ~ i:after {
   left: 50%;
   /*margin: 90px 0;*/
   transform: translate(-50%, 0);
-  background-color: #644668;
+  background-color: #7B295C;
   width: 100%;
   height: 100%;
   /*max-width: 450px;*/
@@ -262,20 +262,20 @@ ul li input[type=checkbox]:checked ~ i:after {
 {
 	max-height: 70vh;
 	overflow: auto;
-	background: rgba(0,0,0,0.2);
+	/*background: rgba(0,0,0,0.2);*/
 }
 
 .modal_content::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #EC7263;
+  background-color: #FB736A;
 }
 
 .modal_content::-webkit-scrollbar
 {
   height: 10px;
   width: 10px;
-  background-color: #EC7263;
+  background-color: #FB736A;
 }
 
 .modal_content::-webkit-scrollbar-thumb
@@ -362,7 +362,7 @@ perspective effects (not including the modals and the overlay).
 /* Content styles */
 .md-content {
 	color: #fff;
-	background: #EC7263;
+	background: #FB736A;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
@@ -565,7 +565,7 @@ perspective effects (not including the modals and the overlay).
 button {
 	border: none;
 	padding: 0.6em 1.2em;
-	background: #c0392b;
+	background: #FB736A;
 	color: #fff;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: 1em;
@@ -579,5 +579,5 @@ button {
 }
 
 button:hover {
-	background: #A5281B;
+	background: #FB9C70;
 }

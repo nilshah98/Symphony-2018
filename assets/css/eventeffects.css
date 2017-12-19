@@ -33,14 +33,14 @@ html, body {
 body {
   font-family: 'Helvetica', sans-serif;
   background-color: #e7e7e7;
-  color: #777;
+  color: #FFF;
   /*padding: 30px 0;*/
   font-weight: 300;
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #644668;
+  font-family: Lato;
+  background-color: #7B295C;
 }
 
 .eventcontainer {
@@ -88,7 +88,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #777;
+  color: #FFF;
 }
 
 .container {
@@ -96,7 +96,7 @@ a {
   /*margin: 35px auto 0;*/
   /*width: 300px;*/
   /*height: 534px;*/
-  background-color: #533557;
+  background: linear-gradient(to right, #9A3767 , #7B295C);
   overflow: hidden;
 }
 .container
@@ -212,7 +212,7 @@ label[for*='5']:before {
 }
 .card .side {
   border-radius: 6px;
-  background:#422447;
+  background:#7B295C;
   backface-visibility: hidden;
   position: absolute;
   overflow: hidden;
@@ -246,11 +246,11 @@ label[for*='5']:before {
 }
 .tab-wrap
 {
-  background:linear-gradient(rgba(83,53,87,1), rgba(83,53,87,1)) !important;
+  background:linear-gradient(#9A3767,#7B295C) !important;
 }
 .tab__content
 {
-  background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0));
+  background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
 }
 
 /*=====================================================================*/
@@ -271,7 +271,7 @@ label[for*='5']:before {
 
 .tab__content::-webkit-scrollbar-thumb
 {
-  background-color: #EC7263;
+  background-color: #FB9C70;
   border-radius: 5px;
   /*border: 2px solid #555555;*/
 }
@@ -407,8 +407,8 @@ label[for*='5']:before {
 }
 
 .tab + label {
-  -webkit-box-shadow: 0 -1px 0 #533557 inset;
-          box-shadow: 0 -1px 0 #533557 inset;
+  -webkit-box-shadow: 0 -1px 0 #9A3767 inset;
+          box-shadow: 0 -1px 0 #9A3767 inset;
   border-radius: 6px 6px 0 0;
   cursor: pointer;
   display: block;
@@ -482,7 +482,7 @@ label[for*='5']:before {
   transform: translate(50px, 50px);
 }
 #toggle:checked ~ .nav .nav-item {
-  color: #EC7263;
+  color: #FB9C70;
   letter-spacing: 0;
   height: 40px;
   line-height: 40px;
@@ -551,7 +551,7 @@ label[for*='5']:before {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #EC7263;
+  background-color: #FB9C70;
   border-radius: 5px;
   transition: 0.5s;
 }
@@ -630,35 +630,35 @@ label[for*='5']:before {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #EC7263;
+  background-color: #FB9C70;
   transform: translateY(-50%) scaleY(5);
   transition: 0.5s;
 }
 label
 {
   font-variant: small-caps;
-  color: #EC7263 !important;
-  background: #644668 !important;
+  color: #FB9C70 !important;
+  background: #7B295C !important;
 }
 
 .tab:checked + label {
-  background-color: #533557 !important;
+  background-color: #9A3767 !important;
   color: #fff !important;
-  -webkit-box-shadow: 0 -1px 0 #533557 inset;
-          box-shadow: 0 -1px 0 #533557 inset;
+  -webkit-box-shadow: 0 -1px 0 #9A3767 inset;
+          box-shadow: 0 -1px 0 #9A3767 inset;
   cursor: default;
 }
 
 .tab:checked + label:hover {
-  -webkit-box-shadow: 0 -1px 0 #533557 inset;
-          box-shadow: 0 -1px 0 #533557 inset;
-  background-color: #533557 !important;
+  -webkit-box-shadow: 0 -1px 0 #9A3767 inset;
+          box-shadow: 0 -1px 0 #9A3767 inset;
+  background-color: #9A3767 !important;
   color: #fff !important;
 }
 
 .tab + label:hover {
-  background-color: #533557 !important;
+  background-color: #9A3767 !important;
   color: #fff !important;
-/*  -webkit-box-shadow: 0 1px 0 #533557 inset;
-          box-shadow: 0 1px 0 #533557 inset;*/
+/*  -webkit-box-shadow: 0 1px 0 #9A3767 inset;
+          box-shadow: 0 1px 0 #9A3767 inset;*/
 }

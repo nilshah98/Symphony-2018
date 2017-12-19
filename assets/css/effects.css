@@ -1,3 +1,22 @@
+/*.tooltip {
+  position: relative;
+  float: left;
+  width: 24rem;
+  padding: 2rem;
+  margin: 0 1.6em 1.6rem 0;
+  background: white;
+  border-radius: 0.5rem;
+}
+*/
+.tooltip:after{
+  content: '\25bc';
+  color: black;
+  font-size: 2rem;
+  position: absolute;
+  right: -1.5rem;
+  left: 50%;
+  margin: 0 0 -1rem 0;
+}
 .card
 {
 	position: relative;
@@ -46,6 +65,18 @@
 	left: 25vw;
 	width: 20vw;
 	background: rgba(0,0,0,0.5);
+}
+#textcard2:after
+{
+	left:60%;
+}
+#textcard3:after
+{
+	left:50%;
+}
+#textcard4:after
+{
+	left:75%;
 }
 #textcard3
 {

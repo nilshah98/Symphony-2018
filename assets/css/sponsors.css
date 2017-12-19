@@ -192,21 +192,30 @@ body
   display: flex;
   justify-content: space-evenly;
 }
-.sponsorsection1 div { 
+.sponsorsection1 > div { 
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto; 
   /*width: 200px; */
   margin: .5vw; 
 }
-.sponsorsection1 div
+.sponsorsection1 > div
 {
+  position: relative;
   min-width: 30%;
   max-width: 30%;
 }
 .sponsorsection1 div img { 
   width: 100%; 
   height: auto; 
+}
+.sponsorcontainer
+{
+  width: 75%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 @media screen and (max-width: 400px) {
   /*.tab-content div { margin: 0; }*/
@@ -215,7 +224,7 @@ body
 }
 
 @media screen and (max-width: 991px) {
-  .sponsorsection1 div
+  .sponsorsection1 > div
   {
     min-width: 40%;
     max-width: 40%;
@@ -224,7 +233,7 @@ body
 }
 
 @media screen and (max-width: 575px) {
-  .sponsorsection1 div
+  .sponsorsection1 > div
   {
     min-width: 80%;
     max-width: 80%;

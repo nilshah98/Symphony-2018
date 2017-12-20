@@ -1,21 +1,18 @@
-.card
-{
-  border-radius: 6px;
-  -webkit-transition: 0.3s -webkit-box-shadow ease;
-  transition: 0.3s -webkit-box-shadow ease;
-  transition: 0.3s box-shadow ease;
-  transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
-}
-.card:hover {
-  -webkit-box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
 }
 
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
 /* boring stuff ie. content*/
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,body
@@ -82,7 +79,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   /*align-content: center;*/
 }
 
@@ -96,13 +94,15 @@ a {
   /*margin: 35px auto 0;*/
   /*width: 300px;*/
   /*height: 534px;*/
+  background: -webkit-gradient(linear, left top, right top, from(#9A3767) , to(#7B295C));
+  background: -webkit-linear-gradient(left, #9A3767 , #7B295C);
+  background: -o-linear-gradient(left, #9A3767 , #7B295C);
   background: linear-gradient(to right, #9A3767 , #7B295C);
   overflow: hidden;
 }
 .container
 {
     -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
-       -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
             box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
 }
 label:before {
@@ -158,10 +158,26 @@ label[for*='5']:before {
     height: auto;
   }
 }
+.card
+{
+  border-radius: 6px;
+  -webkit-transition: 0.3s -webkit-box-shadow ease;
+  transition: 0.3s -webkit-box-shadow ease;
+  -o-transition: 0.3s box-shadow ease;
+  transition: 0.3s box-shadow ease;
+  transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+}
+.card:hover {
+  -webkit-box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+          box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);
+}
 .card-container
 {
   cursor: pointer;
-  perspective: 600;
+  -webkit-perspective: 600;
+          perspective: 600;
   position: relative;
 }
 .card-container
@@ -201,19 +217,24 @@ label[for*='5']:before {
   top: 0px;
   left: 0px;
   position: absolute;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   height: 100%;
   width: 100%;
   border-radius: 6px;
 }
 .card-container:hover .card{
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 .card .side {
   border-radius: 6px;
   background:#7B295C;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: absolute;
   overflow: hidden;
   height: 100%;
@@ -225,7 +246,8 @@ label[for*='5']:before {
   color: #0087cc;
   line-height: 150px;
   text-align: center;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   background-image: url("https://media.giphy.com/media/3oxHQF1VVgH16wLmxy/giphy.gif");
   /*background-attachment: fixed;*/
   background-position: center ;
@@ -254,6 +276,9 @@ label[for*='5']:before {
 }
 .tab__content
 {
+  background:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.2)));
+  background:-webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+  background:-o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
   background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
 }
 
@@ -287,6 +312,7 @@ label[for*='5']:before {
 .tab-wrap {
   -webkit-transition: 0.3s -webkit-box-shadow ease;
   transition: 0.3s -webkit-box-shadow ease;
+  -o-transition: 0.3s box-shadow ease;
   transition: 0.3s box-shadow ease;
   transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
   border-radius: 6px;
@@ -317,13 +343,15 @@ label[for*='5']:before {
   opacity: 1;
   -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
   transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+  -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
   position: relative;
   top: 0;
   z-index: 100;
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+          -ms-transform: translateY(0px);
+      transform: translateY(0px);
   text-shadow: 0 0 0;
 }
 
@@ -331,13 +359,15 @@ label[for*='5']:before {
   opacity: 1;
   -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
   transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+  -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
   position: relative;
   top: 0;
   z-index: 100;
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+          -ms-transform: translateY(0px);
+      transform: translateY(0px);
   text-shadow: 0 0 0;
 }
 
@@ -345,13 +375,15 @@ label[for*='5']:before {
   opacity: 1;
   -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
   transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+  -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
   position: relative;
   top: 0;
   z-index: 100;
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+          -ms-transform: translateY(0px);
+      transform: translateY(0px);
   text-shadow: 0 0 0;
 }
 
@@ -359,13 +391,15 @@ label[for*='5']:before {
   opacity: 1;
   -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
   transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+  -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
   position: relative;
   top: 0;
   z-index: 100;
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+          -ms-transform: translateY(0px);
+      transform: translateY(0px);
   text-shadow: 0 0 0;
 }
 
@@ -373,13 +407,15 @@ label[for*='5']:before {
   opacity: 1;
   -webkit-transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
   transition: 0.5s opacity ease-in, 0.8s -webkit-transform ease;
+  -o-transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease;
   transition: 0.5s opacity ease-in, 0.8s transform ease, 0.8s -webkit-transform ease;
   position: relative;
   top: 0;
   z-index: 100;
   -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+          -ms-transform: translateY(0px);
+      transform: translateY(0px);
   text-shadow: 0 0 0;
 }
 
@@ -430,6 +466,7 @@ label[for*='5']:before {
   text-align: center;
   -webkit-transition: 0.3s background-color ease, 0.3s -webkit-box-shadow ease;
   transition: 0.3s background-color ease, 0.3s -webkit-box-shadow ease;
+  -o-transition: 0.3s background-color ease, 0.3s box-shadow ease;
   transition: 0.3s background-color ease, 0.3s box-shadow ease;
   transition: 0.3s background-color ease, 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
   height: 50px;
@@ -447,7 +484,8 @@ label[for*='5']:before {
   opacity: 0;
   left: 0;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+      transform: translateY(-3px);
   /*border-radius: 6px;*/
 }
 
@@ -462,28 +500,38 @@ label[for*='5']:before {
 }
 
 #toggle:focus ~ .toggle-container .button-toggle {
-  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #toggle:checked ~ .toggle-container .button-toggle {
-  box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #toggle:checked ~ .toggle-container .button-toggle:hover {
-  box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #toggle:checked ~ .toggle-container .button-toggle:before {
-  transform: translateY(-50%) rotate(45deg) scale(1);
+  -webkit-transform: translateY(-50%) rotate(45deg) scale(1);
+      -ms-transform: translateY(-50%) rotate(45deg) scale(1);
+          transform: translateY(-50%) rotate(45deg) scale(1);
 }
 #toggle:checked ~ .toggle-container .button-toggle:after {
-  transform: translateY(-50%) rotate(-45deg) scale(1);
+  -webkit-transform: translateY(-50%) rotate(-45deg) scale(1);
+      -ms-transform: translateY(-50%) rotate(-45deg) scale(1);
+          transform: translateY(-50%) rotate(-45deg) scale(1);
 }
 #toggle:checked:focus ~ .toggle-container .button-toggle {
-  box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 200vmax rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 #toggle:checked ~ .nav {
   margin-bottom: 100px;
   pointer-events: auto;
-  transform: translate(50px, 50px);
+  -webkit-transform: translate(50px, 50px);
+      -ms-transform: translate(50px, 50px);
+          transform: translate(50px, 50px);
 }
 #toggle:checked ~ .nav .nav-item {
   color: #FB9C70;
@@ -492,32 +540,52 @@ label[for*='5']:before {
   line-height: 40px;
   margin-top: 0;
   opacity: 1;
-  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: 0.5s, opacity 0.1s;
+  -o-transition: 0.5s, opacity 0.1s;
   transition: 0.5s, opacity 0.1s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(1) {
-  transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(1):before {
-  transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(2) {
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(2):before {
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(3) {
-  transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+       -o-transition-delay: 0.05s;
+          transition-delay: 0.05s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(3):before {
-  transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+       -o-transition-delay: 0.05s;
+          transition-delay: 0.05s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(4) {
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 #toggle:checked ~ .nav .nav-item:nth-child(4):before {
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 #toggle:checked ~ .nav .nav-item:before {
   opacity: 0;
@@ -543,10 +611,13 @@ label[for*='5']:before {
   border: none;
   cursor: pointer;
   border-radius: 100%;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
   transition: 0.6s;
 }
 .button-toggle:hover {
-  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .button-toggle:before, .button-toggle:after {
   position: absolute;
@@ -557,13 +628,19 @@ label[for*='5']:before {
   height: 2px;
   background-color: #FB9C70;
   border-radius: 5px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 .button-toggle:before {
-  transform: translateY(-50%) rotate(45deg) scale(0);
+  -webkit-transform: translateY(-50%) rotate(45deg) scale(0);
+      -ms-transform: translateY(-50%) rotate(45deg) scale(0);
+          transform: translateY(-50%) rotate(45deg) scale(0);
 }
 .button-toggle:after {
-  transform: translateY(-50%) rotate(-45deg) scale(0);
+  -webkit-transform: translateY(-50%) rotate(-45deg) scale(0);
+      -ms-transform: translateY(-50%) rotate(-45deg) scale(0);
+          transform: translateY(-50%) rotate(-45deg) scale(0);
 }
 
 
@@ -574,6 +651,8 @@ label[for*='5']:before {
   display: inline-block;
   margin: 25px 25px 20px;
   pointer-events: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -589,32 +668,52 @@ label[for*='5']:before {
   line-height: 7px;
   text-transform: uppercase;
   white-space: nowrap;
-  transform: scaleY(0.2);
+  -webkit-transform: scaleY(0.2);
+      -ms-transform: scaleY(0.2);
+          transform: scaleY(0.2);
+  -webkit-transition: 0.5s, opacity 1s;
+  -o-transition: 0.5s, opacity 1s;
   transition: 0.5s, opacity 1s;
 }
 .nav-item:nth-child(1) {
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .nav-item:nth-child(1):before {
-  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .nav-item:nth-child(2) {
-  transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+       -o-transition-delay: 0.05s;
+          transition-delay: 0.05s;
 }
 .nav-item:nth-child(2):before {
-  transition-delay: 0.05s;
+  -webkit-transition-delay: 0.05s;
+       -o-transition-delay: 0.05s;
+          transition-delay: 0.05s;
 }
 .nav-item:nth-child(3) {
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 .nav-item:nth-child(3):before {
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 .nav-item:nth-child(4) {
-  transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 .nav-item:nth-child(4):before {
-  transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 .nav-item:nth-child(1) {
   letter-spacing: -8px;
@@ -635,7 +734,11 @@ label[for*='5']:before {
   width: 100%;
   height: 2px;
   background-color: #FB9C70;
-  transform: translateY(-50%) scaleY(5);
+  -webkit-transform: translateY(-50%) scaleY(5);
+      -ms-transform: translateY(-50%) scaleY(5);
+          transform: translateY(-50%) scaleY(5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 label

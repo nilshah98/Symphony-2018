@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
 /*scroll bars*/
 .content::-webkit-scrollbar-track
 {
@@ -20,28 +31,31 @@
 }
 
 .content {
+  color: #fff;
   height: calc(100vh - 70px);
   overflow: auto;
 }
 
 #parvaahlogo
 {
-	height: calc(40vh - 70px);
-	position: relative;
+  height: calc(40vh - 70px);
+  position: relative;
 }
 
 .center
 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 
 #parvaahlogo img
 {
-	height: 25vh;
-	width: auto;
+  height: 25vh;
+  width: auto;
 }
 
 .main
@@ -52,31 +66,39 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .parvaah_img img
 {
-	width: 100%;
-	height: auto;
-	border-radius: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .parvaah_img
 {
-	padding-left: 25px;
-	padding-right: 25px;
-	flex:3 1 0px;
-	min-width: 0;
-	max-width: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+  -webkit-box-flex:3;
+      -ms-flex:3 1 0px;
+          flex:3 1 0px;
+  min-width: 0;
+  max-width: 400px;
 }
 
 .parvaah_content
 {
-	padding-right: 25px;
-	flex:5 1 0px;
+  padding-right: 25px;
+  -webkit-box-flex:5;
+      -ms-flex:5 1 0px;
+          flex:5 1 0px;
 }
 
 .content h1,h2,h3,h4,h5,h6
@@ -87,16 +109,23 @@ hr
 {
   border: 0;
     height: 1px !important;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(200, 200, 200, 0));
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.75)), to(rgba(200, 200, 200, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(200, 200, 200, 0));
+    background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(200, 200, 200, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(200, 200, 200, 0));
 }
 
 .content .row:nth-child(odd) .parvaah_img
 {
-  order:2;
+  -webkit-box-ordinal-group:3;
+      -ms-flex-order:2;
+          order:2;
 }
 .content .row:nth-child(odd) .parvaah_content
 {
-  order:1;
+  -webkit-box-ordinal-group:2;
+      -ms-flex-order:1;
+          order:1;
   padding-right: 0px;
   padding-left: 25px;
   text-align: right;
@@ -108,17 +137,23 @@ hr
 @media only screen and (max-width: 750px) {
   
    .main{
-    -webkit-flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
             flex-flow: column;
    }
    .parvaah_img
    {
     max-width: 300px;
-    order:1 !important;
+    -webkit-box-ordinal-group:2 !important;
+        -ms-flex-order:1 !important;
+            order:1 !important;
    }
   .parvaah_content
   {
-    order:2 !important;
+    -webkit-box-ordinal-group:3 !important;
+        -ms-flex-order:2 !important;
+            order:2 !important;
     text-align: center !important;
     padding: 25px !important;
   }

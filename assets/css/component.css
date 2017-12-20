@@ -1,7 +1,19 @@
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
 .md-content
 {
   -webkit-transition: 0.3s -webkit-box-shadow ease;
   transition: 0.3s -webkit-box-shadow ease;
+  -o-transition: 0.3s box-shadow ease;
   transition: 0.3s box-shadow ease;
   transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -48,18 +60,20 @@
 
 /*accordion*/
 .transition, p, ul li i:before, ul li i:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .flipIn, h1, ul li {
-  animation: flipdown 0.5s ease both;
+  -webkit-animation: flipdown 0.5s ease both;
+          animation: flipdown 0.5s ease both;
 }
 
 .no-select, h2 {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -124,7 +138,9 @@ p {
   overflow: hidden;
   /*max-height: 800px;*/
   opacity: 1;
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
   margin-top: 14px;
   z-index: 2;
 }
@@ -146,15 +162,18 @@ ul li {
 }
 
 ul li:nth-of-type(1) {
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 ul li:nth-of-type(2) {
-  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 
 ul li:nth-of-type(3) {
-  animation-delay: 1.0s;
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
 }
 
 ul li:last-of-type {
@@ -163,7 +182,9 @@ ul li:last-of-type {
 
 ul li i {
   position: absolute;
-  transform: translate(-6px, 0);
+  -webkit-transform: translate(-6px, 0);
+      -ms-transform: translate(-6px, 0);
+          transform: translate(-6px, 0);
   margin-top: 16px;
   right: 0;
 }
@@ -177,13 +198,21 @@ ul li i:before, ul li i:after {
 }
 
 ul li i:before {
-  transform: translate(-2px, 0) rotate(45deg);
-  transition-delay: 0.15s;
+  -webkit-transform: translate(-2px, 0) rotate(45deg);
+      -ms-transform: translate(-2px, 0) rotate(45deg);
+          transform: translate(-2px, 0) rotate(45deg);
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 ul li i:after {
-  transition-delay: 0.15s;
-  transform: translate(2px, 0) rotate(-45deg);
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+  -webkit-transform: translate(2px, 0) rotate(-45deg);
+      -ms-transform: translate(2px, 0) rotate(-45deg);
+          transform: translate(2px, 0) rotate(-45deg);
 }
 
 ul li input[type=checkbox] {
@@ -199,41 +228,89 @@ ul li input[type=checkbox]:checked ~ p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
-  transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
 }
 
 ul li input[type=checkbox]:checked ~ i:before {
-  transform: translate(2px, 0) rotate(45deg);
-  transition-delay: 0.15s;
+  -webkit-transform: translate(2px, 0) rotate(45deg);
+      -ms-transform: translate(2px, 0) rotate(45deg);
+          transform: translate(2px, 0) rotate(45deg);
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 
 }
 
 ul li input[type=checkbox]:checked ~ i:after {
-  transition-delay: 0.15s;
-  transform: translate(-2px, 0) rotate(-45deg);
+  -webkit-transition-delay: 0.15s;
+       -o-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+  -webkit-transform: translate(-2px, 0) rotate(-45deg);
+      -ms-transform: translate(-2px, 0) rotate(-45deg);
+          transform: translate(-2px, 0) rotate(-45deg);
 }
 
-@keyframes flipdown {
+@-webkit-keyframes flipdown {
   0% {
     opacity: 0;
-    transform-origin: top center;
-    transform: rotateX(-90deg);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
   }
   5% {
     opacity: 1;
   }
   80% {
-    transform: rotateX(8deg);
+    -webkit-transform: rotateX(8deg);
+            transform: rotateX(8deg);
   }
   83% {
-    transform: rotateX(6deg);
+    -webkit-transform: rotateX(6deg);
+            transform: rotateX(6deg);
   }
   92% {
-    transform: rotateX(-3deg);
+    -webkit-transform: rotateX(-3deg);
+            transform: rotateX(-3deg);
   }
   100% {
-    transform-origin: top center;
-    transform: rotateX(0deg);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: rotateX(8deg);
+            transform: rotateX(8deg);
+  }
+  83% {
+    -webkit-transform: rotateX(6deg);
+            transform: rotateX(6deg);
+  }
+  92% {
+    -webkit-transform: rotateX(-3deg);
+            transform: rotateX(-3deg);
+  }
+  100% {
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
   }
 }
 
@@ -249,7 +326,9 @@ ul li input[type=checkbox]:checked ~ i:after {
   position: relative;
   left: 50%;
   /*margin: 90px 0;*/
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   background-color: #7B295C;
   width: 100%;
   height: 100%;
@@ -306,7 +385,6 @@ perspective effects (not including the modals and the overlay).
 	background-size: cover ;*/
 	background: #222;
 	-webkit-perspective: 600px;
-	-moz-perspective: 600px;
 	perspective: 600px;
 }
 
@@ -327,10 +405,8 @@ perspective effects (not including the modals and the overlay).
 	z-index: 2000;
 	visibility: hidden;
 	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
 	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
@@ -350,7 +426,7 @@ perspective effects (not including the modals and the overlay).
 	opacity: 0;
 	background: rgba(100, 70, 104,0.3);
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -415,7 +491,7 @@ perspective effects (not including the modals and the overlay).
 .md-show.md-effect-18 ~ .md-overlay {
 	/*background: rgba(143,27,15,0.8);*/
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -428,7 +504,8 @@ perspective effects (not including the modals and the overlay).
 	-moz-transform-origin: 0% 50%;
 	-moz-animation: rotateRightSideFirst 0.5s forwards ease-in;
 	transform-style: preserve-3d;
-	transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+	    transform-origin: 0% 50%;
 	animation: rotateRightSideFirst 0.5s forwards ease-in;
 }
 
@@ -437,19 +514,13 @@ perspective effects (not including the modals and the overlay).
 	100% { -webkit-transform: translateZ(-200px); }
 }
 
-@-moz-keyframes rotateRightSideFirst {
-	50% { -moz-transform: translateZ(-50px) rotateY(5deg); -moz-animation-timing-function: ease-out; }
-	100% { -moz-transform: translateZ(-200px); }
-}
-
 @keyframes rotateRightSideFirst {
-	50% { transform: translateZ(-50px) rotateY(5deg); animation-timing-function: ease-out; }
-	100% { transform: translateZ(-200px); }
+	50% { -webkit-transform: translateZ(-50px) rotateY(5deg); transform: translateZ(-50px) rotateY(5deg); -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+	100% { -webkit-transform: translateZ(-200px); transform: translateZ(-200px); }
 }
 
 .md-effect-18 .md-content {
 	-webkit-transform: translateX(200%);
-	-moz-transform: translateX(200%);
 	-ms-transform: translateX(200%);
 	transform: translateX(200%);
 	opacity: 0;
@@ -457,28 +528,24 @@ perspective effects (not including the modals and the overlay).
 
 .md-show.md-effect-18 .md-content {
 	-webkit-transform: translateX(0);
-	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
 	transform: translateX(0);
 	opacity: 1;
 	-webkit-transition: all 0.5s 0.1s;
-	-moz-transition: all 0.5s 0.1s;
+	-o-transition: all 0.5s 0.1s;
 	transition: all 0.5s 0.1s;
 }
 
 /* Effect 13: 3D slit */
 .md-effect-13.md-modal {
 	-webkit-perspective: 1300px;
-	-moz-perspective: 1300px;
 	perspective: 1300px;
 }
 
 .md-effect-13 .md-content {
 	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	-webkit-transform: translateZ(-3000px) rotateY(90deg);
-	-moz-transform: translateZ(-3000px) rotateY(90deg);
 	-ms-transform: translateZ(-3000px) rotateY(90deg);
 	transform: translateZ(-3000px) rotateY(90deg);
 	opacity: 0;
@@ -486,7 +553,6 @@ perspective effects (not including the modals and the overlay).
 
 .md-show.md-effect-13 .md-content {
 	-webkit-animation: slit .7s forwards ease-out;
-	-moz-animation: slit .7s forwards ease-out;
 	animation: slit .7s forwards ease-out;
 }
 
@@ -495,32 +561,25 @@ perspective effects (not including the modals and the overlay).
 	100% { -webkit-transform: translateZ(0) rotateY(0deg); opacity: 1; }
 }
 
-@-moz-keyframes slit {
-	50% { -moz-transform: translateZ(-250px) rotateY(89deg); opacity: .5; -moz-animation-timing-function: ease-out;}
-	100% { -moz-transform: translateZ(0) rotateY(0deg); opacity: 1; }
-}
-
 @keyframes slit {
-	50% { transform: translateZ(-250px) rotateY(89deg); opacity: 1; animation-timing-function: ease-in;}
-	100% { transform: translateZ(0) rotateY(0deg); opacity: 1; }
+	50% { -webkit-transform: translateZ(-250px) rotateY(89deg); transform: translateZ(-250px) rotateY(89deg); opacity: 1; -webkit-animation-timing-function: ease-in; animation-timing-function: ease-in;}
+	100% { -webkit-transform: translateZ(0) rotateY(0deg); transform: translateZ(0) rotateY(0deg); opacity: 1; }
 }
 
 
 /* Effect 11: Super scaled */
 .md-effect-11 .md-content {
 	-webkit-transform: scale(2);
-	-moz-transform: scale(2);
 	-ms-transform: scale(2);
 	transform: scale(2);
 	opacity: 0;
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
 .md-show.md-effect-11 .md-content {
 	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
 	opacity: 1;
@@ -529,30 +588,26 @@ perspective effects (not including the modals and the overlay).
 /* Effect 15:  3D Rotate in from left */
 .md-effect-15.md-modal {
 	-webkit-perspective: 1300px;
-	-moz-perspective: 1300px;
 	perspective: 1300px;
 }
 
 .md-effect-15 .md-content {
 	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	-webkit-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
-	-moz-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
 	-ms-transform: translateZ(100px) translateX(-30%) rotateY(90deg);
 	transform: translateZ(100px) translateX(-30%) rotateY(90deg);
 	-webkit-transform-origin: 0 100%;
-	-moz-transform-origin: 0 100%;
-	transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	    transform-origin: 0 100%;
 	opacity: 0;
 	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
 .md-show.md-effect-15 .md-content {
 	-webkit-transform: translateZ(0px) translateX(0%) rotateY(0deg);
-	-moz-transform: translateZ(0px) translateX(0%) rotateY(0deg);
 	-ms-transform: translateZ(0px) translateX(0%) rotateY(0deg);
 	transform: translateZ(0px) translateX(0%) rotateY(0deg);
 	opacity: 1;

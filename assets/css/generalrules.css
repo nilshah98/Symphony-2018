@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
 /*scroll bars*/
 .content::-webkit-scrollbar-track
 {
@@ -25,14 +36,17 @@
 }
 
 .main h1
-{	
-	text-align: center;
+{ 
+  text-align: center;
 }
 
 hr
 {
-	border: 0;
+  border: 0;
     height: 1px !important;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(200, 200, 200, 0)), color-stop(rgba(200, 200, 200, 0.75)), to(rgba(200, 200, 200, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0));
+    background-image: -o-linear-gradient(left, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0));
     background-image: linear-gradient(to right, rgba(200, 200, 200, 0), rgba(200, 200, 200, 0.75), rgba(200, 200, 200, 0));
 }
 
@@ -43,13 +57,13 @@ hr
   /*background: rgba(0,0,0,0.2);*/
   padding: 20px;
   max-width: 1000px;
-	margin: 20px auto;
+  margin: 20px auto;
   /*-webkit-box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
           /*box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
 }
 
 p {
-	/*font-size: 1rem; */
-	line-height: 1.5em;
-	/*text-indent: 2.5rem;*/
+  /*font-size: 1rem; */
+  line-height: 1.5em;
+  /*text-indent: 2.5rem;*/
 }

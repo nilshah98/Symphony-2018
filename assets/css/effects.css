@@ -351,7 +351,7 @@ a {
 	/*to make margin disappear-*/
 	font-size: 0px;
 	overflow-x: auto;
-	/*overflow-y: hidden;*/
+	overflow-y: hidden;
 	white-space: nowrap;
 	padding-bottom: 11px;
 }
@@ -366,6 +366,7 @@ a {
 	background-position: center ;
 	background-repeat: no-repeat ;
 	background-size: contain ;
+	overflow-y: hidden;
 }
 #card1
 {

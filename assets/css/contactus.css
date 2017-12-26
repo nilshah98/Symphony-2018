@@ -58,15 +58,15 @@ body {
 
 .front {
   transform: rotateY(0deg);
-  background: -webkit-linear-gradient(top left, #84DD63, #009970);
-  background: linear-gradient(to bottom right, #84DD63, #009970);
+  background: -webkit-linear-gradient(top left, #fbd995, #fb736a);
+  background: linear-gradient(to bottom right, #fbd995, #fb736a);
   text-align: center;
   padding: 30px;
 }
 
 .back {
-  background: -webkit-linear-gradient(top left, #009970, #84DD63);
-  background: linear-gradient(to bottom right, #009970, #84DD63);
+  background: -webkit-linear-gradient(top left, #fbd995, #fb736a);
+  background: linear-gradient(to bottom right, #fbd995, #fb736a);
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   padding: 40px 15px;

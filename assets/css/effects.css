@@ -56,32 +56,46 @@
 .trigger
 {
 	position: absolute;
-	/*background: rgba(0,0,0,0.5);*/
-	width:20vw;
+	background: rgba(0,0,0,0.5);
+	width:17vw;
 	height:60vh;
 	z-index: 100;
 }
 #trigger1
 {
-	left:30vw;
+	left:15vw;
 	bottom:0;
 }
 #trigger2
 {
-	left:53vw;
+	left:45vw;
 	bottom:0;
 }
 #trigger3
 {
-	right:0vw;
+	right:20vw;
 	bottom:0;
-	width: 10vw;
 }
 #trigger4
 {
-	left:0vw;
+	right:0vw;
 	bottom:0;
-	width: 10vw;
+}
+#trigger5
+{
+	bottom: 0;
+	left: 1vw;
+
+}
+#trigger6
+{
+	bottom: 0;
+	left: 23vw;
+}
+#trigger7
+{
+	bottom: 0;
+	left: 41vw;
 }
 #textcard2
 {

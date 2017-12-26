@@ -11,11 +11,13 @@ body {
 
 #container {
   width: auto;
-  height: auto;
+  /*height: auto;*/
   /*margin-top: 120px;*/
   -webkit-perspective: 800px;
   perspective: 800px;
   text-align: center;
+  height: calc(100vh - 70px);
+  overflow: auto;
 }
 
 #container h1 {

@@ -97,16 +97,17 @@ a {
   /*margin: 35px auto 0;*/
   /*width: 300px;*/
   /*height: 534px;*/
-  background: -webkit-gradient(linear, left top, right top, from(#9A3767) , to(#7B295C));
+/*  background: -webkit-gradient(linear, left top, right top, from(#9A3767) , to(#7B295C));
   background: -webkit-linear-gradient(left, #9A3767 , #7B295C);
   background: -o-linear-gradient(left, #9A3767 , #7B295C);
-  background: linear-gradient(to right, #9A3767 , #7B295C);
+  background: linear-gradient(to right, #9A3767 , #7B295C);*/
+  background: #7B295C;
   overflow: hidden;
 }
 .container
 {
-    -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
-            box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
+/*    -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.23);*/
 }
 label:before {
   font-family: fontawesome;

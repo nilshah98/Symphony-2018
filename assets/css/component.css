@@ -104,7 +104,7 @@ html {
 }*/
 
 h1, h2 {
-  color: #FB736A;
+  /*color: #FB736A;*/
 }
 
 h1 {
@@ -192,7 +192,7 @@ ul li i {
 ul li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #FB736A;
+  background-color: #fff;
   width: 3px;
   height: 9px;
 }
@@ -329,7 +329,7 @@ ul li input[type=checkbox]:checked ~ i:after {
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  background-color: #7B295C;
+  background-color: #9a3767;
   width: 100%;
   height: 100%;
   /*max-width: 450px;*/
@@ -438,7 +438,7 @@ perspective effects (not including the modals and the overlay).
 /* Content styles */
 .md-content {
 	color: #fff;
-	background: #FB736A;
+	background:#7B295C;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
@@ -620,7 +620,7 @@ perspective effects (not including the modals and the overlay).
 button {
 	border: none;
 	padding: 0.6em 1.2em;
-	background: #FB736A;
+	background: #7B295C;
 	color: #fff;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: 1em;

@@ -287,6 +287,7 @@ html, body {
 body {
 	font-family: Lato;
 	background-color: #7b295c;
+	overflow-y: hidden;
 }
 
 a {
@@ -321,6 +322,7 @@ a {
 	overflow-x: auto;
 	/*overflow-y: hidden;*/
 	white-space: nowrap;
+	padding-bottom: 11px;
 }
 .card {
 	/*margin-right: -4px;*/

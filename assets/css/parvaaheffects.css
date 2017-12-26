@@ -9,6 +9,13 @@
     src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
     font-weight: bold;
 }
+
+#content_center
+{
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
 /*scroll bars*/
 .content::-webkit-scrollbar-track
 {

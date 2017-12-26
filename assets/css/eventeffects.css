@@ -58,10 +58,13 @@ body {
 
 .eventcontainer {
   margin:auto;
-  margin-top: calc(20vh - 60px);
-  margin-bottom: calc(20vh - 60px);
+  padding-top: calc(20vh - 60px);
+  padding-bottom: calc(20vh - 60px);
   display: block;
-  max-width: 800px;
+  max-width: 1000px;
+  height: calc(100vh - 70px);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*.eventcontainer > *:not(.tab-wrap) {
@@ -237,7 +240,7 @@ label[for*='5']:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 100%;
   width: 100%;
 }

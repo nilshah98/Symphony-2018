@@ -16,8 +16,8 @@
 
 #homepage_heading
 {
-	width: 100%;
-	height: calc(100% - 30px);
+	width: 70%;
+	height: calc(70% - 30px);
 	position: relative;
 	position: absolute;
 	top: 50%;

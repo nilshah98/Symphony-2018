@@ -15,6 +15,14 @@
           box-sizing: border-box;
 }
 
+.eventsbg {
+  background-image: url("../images/bgs/others/shield.png") ;
+  /*background-attachment: fixed;*/
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
+}
+
 html,body
 {
   height: 100vh;

@@ -33,6 +33,11 @@
 .content {
   height: calc(100vh - 70px);
   overflow: auto;
+  background-image: url("../images/bgs/others/generalrules.png") ;
+  /*background-attachment: fixed;*/
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
 }
 
 .main h1

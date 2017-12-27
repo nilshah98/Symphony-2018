@@ -47,10 +47,11 @@
 
 .textcontent
 {
+	color: #fff;
 	padding: 10px;
 	font-size: 16px;
 	position: absolute;
-	width: 50%;
+	/*width: 50%;*/
 	/*height: 100%;*/
 }
 .trigger
@@ -100,28 +101,35 @@
 #textcard2
 {
 	opacity: 0;
-	left: 25vw;
-	width: 20vw;
+	left: 21vw;
+	width: 40vw;
 	background: rgba(0,0,0,0.2);
 	height: auto;
 }
 #textcard3
 {
 	opacity: 0;
-	left: 50vw;
-	width:20vw;
+	left: 45vw;
+	width:40vw;
 	background: rgba(0,0,0,0.2);
 	height: auto;
 }
 #textcard4
 {
 	opacity: 0;
-	right: 0px;
-	width:20vw;
+	right: 10vw;
+	width:40vw;
 	background: rgba(0,0,0,0.2);
 	height: auto;
 }
-
+#textcard5
+{
+	opacity: 0;
+	right: 0vw;
+	width: 40vw;
+	background: rgba(0,0,0,0.2);
+	height: auto;
+}
 #trigger1:hover ~ #textcard2
 {
 	opacity: 1;
@@ -131,6 +139,10 @@
 	opacity: 1;
 }
 #trigger3:hover ~ #textcard4
+{
+	opacity: 1;
+}
+#trigger4:hover ~ #textcard5
 {
 	opacity: 1;
 }

@@ -57,7 +57,7 @@
 .trigger
 {
 	position: absolute;
-	background: rgba(0,0,0,0.5);
+	/*background: rgba(0,0,0,0.5);*/
 	width:17vw;
 	height:60vh;
 	z-index: 100;
@@ -143,6 +143,42 @@
 	opacity: 1;
 }
 #trigger4:hover ~ #textcard5
+{
+	opacity: 1;
+}
+#textcard6
+{
+	opacity: 0;
+	left: 0vw;
+	width: 40vw;
+	background: rgba(0,0,0,0.2);
+	height: auto;
+}
+#textcard7
+{
+	opacity: 0;
+	left: 18vw;
+	width: 40vw;
+	background: rgba(0,0,0,0.2);
+	height: auto;
+}
+#textcard8
+{
+	opacity: 0;
+	left: 35vw;
+	width: 40vw;
+	background: rgba(0,0,0,0.2);
+	height: auto;
+}
+#trigger5:hover ~ #textcard6
+{
+	opacity: 1;
+}
+#trigger6:hover ~ #textcard7
+{
+	opacity: 1;
+}
+#trigger7:hover ~ #textcard8
 {
 	opacity: 1;
 }

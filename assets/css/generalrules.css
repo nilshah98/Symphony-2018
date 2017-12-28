@@ -40,6 +40,14 @@
   background-size: cover ;
 }
 
+@media screen and (max-aspect-ratio: 735/1000)
+{
+  .content
+  {
+    background-image: url("../images/bgs/others/mgeneralrules.png");
+  }
+}
+
 .main h1
 { 
   text-align: center;

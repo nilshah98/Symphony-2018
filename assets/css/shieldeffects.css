@@ -22,6 +22,14 @@
   background-repeat: no-repeat ;
   background-size: cover ;
 }
+@media screen and (max-aspect-ratio: 735/1000)
+{
+  .eventsbg
+  {
+    background-image: url("../images/bgs/others/mshield.png");
+  }
+}
+
 
 html,body
 {

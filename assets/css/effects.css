@@ -160,7 +160,7 @@ a {
 	color: white;
 }
 
-@media all and (max-width: 680px) {
+/*@media all and (max-width: 680px) {
   .icon-button {
     border-radius: 1.6rem;
     font-size: 0.8rem;
@@ -187,7 +187,7 @@ a {
    display: none; 
   }
 
-}
+}*/
 
 .card
 {

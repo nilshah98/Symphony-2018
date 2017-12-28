@@ -376,40 +376,76 @@ a {
 	}
 	#trigger1
 	{
-		left: 20vw;
+		left: 2vw;
 		width: 22vw;
-		height: 40vh;
+		height: 23vh;
 	}
 	#trigger2
 	{
-		left: 44vw;
+		left: 35vw;
 		width: 22vw;
-		height: 40vh;
+		height: 15vh;
 	}
 	#trigger3
 	{
-		height: 40vh;
+		height: 20vh;
+		right: 24vw;
 	}
 	#trigger4
 	{
-		height: 40vh;
+		height: 20vh;
+	}
+	#trigger5
+	{
+		height: 18vh;
+	}
+	#trigger6
+	{
+		height: 20vh;
+	}
+	#trigger7
+	{
+		height: 19vh;
 	}
 	#textcard2
 	{
-		width: 50vw;
-		top:20vh;
+		width: 70vw;
+		top:15vh;
+		left:2vw;
 	}
 	#textcard3
 	{
-		left:40vw;
-		width: 50vw;
-		top:20vh;
+		left:20vw;
+		width: 70vw;
+		top:15vh;
 	}
 	#textcard4
 	{
-		right:0vw;
-		width: 50vw;
-		top:20vh;
+		right:3vw;
+		width: 70vw;
+		top:15vh;
+	}
+	#textcard5
+	{
+		width: 70vw;
+		top: 15vh;
+	}
+	#textcard6
+	{
+		width: 70vw;
+		top: 15vh;
+	}
+	#textcard7
+	{
+		width: 70vw;
+		top: 15vh;
+		left:5vw;
+	}
+	#textcard8
+	{
+		width: 70vw;
+		top: 15vh;
+		left:15vw;
 	}
 }
 #loader-wrapper {

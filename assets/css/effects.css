@@ -236,7 +236,7 @@ a {
 .trigger
 {
 	position: absolute;
-	/*background: rgba(0,0,0,0.5);*/
+	background: rgba(0,0,0,0.5);
 	width:17vw;
 	height:60vh;
 	z-index: 100;
@@ -244,37 +244,37 @@ a {
 #trigger1
 {
 	left:15vw;
-	bottom:0;
+	bottom:calc(2.8rem - 11px);
 }
 #trigger2
 {
 	left:45vw;
-	bottom:0;
+	bottom:calc(2.8rem - 11px);
 }
 #trigger3
 {
 	right:20vw;
-	bottom:0;
+	bottom:calc(2.8rem - 11px);
 }
 #trigger4
 {
 	right:0vw;
-	bottom:0;
+	bottom:calc(2.8rem - 11px);
 }
 #trigger5
 {
-	bottom: 0;
+	bottom: calc(2.8rem - 11px);
 	left: 1vw;
 
 }
 #trigger6
 {
-	bottom: 0;
+	bottom: calc(2.8rem - 11px);
 	left: 23vw;
 }
 #trigger7
 {
-	bottom: 0;
+	bottom: calc(2.8rem - 11px);
 	left: 41vw;
 }
 #textcard2
@@ -564,7 +564,7 @@ html, body {
 body {
 	font-family: Lato;
 	background-color: #7b295c;
-	/*overflow-y: hidden;*/
+	overflow-y: hidden;
 	/*jugaad to make scrollbar disappear*/
 }
 

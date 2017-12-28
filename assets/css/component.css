@@ -59,7 +59,7 @@
 }
 
 /*accordion*/
-.transition, p, ul li i:before, ul li i:after {
+.transition,.accordion_content, p, h4, ul li i:before, ul li i:after {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -107,6 +107,16 @@ h1, h2 {
   /*color: #FB736A;*/
 }
 
+input
+{
+  height:54px !important;
+}
+/*.accordion_content
+{
+  max-height:30vh;
+  overflow: auto;
+  border-radius: 6px;
+}*/
 h1 {
   text-transform: uppercase;
   font-size: 36px;
@@ -145,6 +155,30 @@ p {
   z-index: 2;
 }
 
+h4 {
+  margin-bottom: 0px;
+  border-radius: 6px;
+  padding: 5px;
+  /*background: #755779;*/
+  color: #fff;
+  /*font-size: 17px;*/
+  line-height: 1.5em;
+  /*letter-spacing: 1px;*/
+  position: relative;
+  overflow: hidden;
+  /*max-height: 800px;*/
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+ol
+{
+
+  list-style-type: disc;
+}
 ul {
   list-style: none;
   /*perspective: 900;*/
@@ -174,6 +208,11 @@ ul li:nth-of-type(2) {
 ul li:nth-of-type(3) {
   -webkit-animation-delay: 1.0s;
           animation-delay: 1.0s;
+}
+
+ul li:nth-of-type(4) {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
 }
 
 ul li:last-of-type {
@@ -223,8 +262,13 @@ ul li input[type=checkbox] {
   z-index: 1;
   opacity: 0;
 }
+ul li h2
+{
+  margin-bottom: 10px;
+}
 
 ul li input[type=checkbox]:checked ~ p {
+  padding: 0;
   margin-top: 0;
   max-height: 0;
   opacity: 0;
@@ -232,6 +276,34 @@ ul li input[type=checkbox]:checked ~ p {
       -ms-transform: translate(0, 50%);
           transform: translate(0, 50%);
 }
+ul li input[type=checkbox]:checked ~ h4 {
+  padding: 0;
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+ul li input[type=checkbox]:checked ~ .accordion_content {
+  padding: 0;
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+ul li input[type=checkbox]:checked ~ ol {
+  padding: 0;
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
 
 ul li input[type=checkbox]:checked ~ i:before {
   -webkit-transform: translate(2px, 0) rotate(45deg);

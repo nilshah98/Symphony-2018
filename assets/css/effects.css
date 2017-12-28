@@ -41,7 +41,7 @@ a {
 
 /* Wrapper */
 .icon-button {
-	background-color: rgba(0,0,0,0.3);
+	background-color: white;
 	border-radius: 2.6rem;
 	cursor: pointer;
 	display: inline-block;
@@ -679,19 +679,19 @@ a {
 {
 	#card1
 	{
-		background-image: url("../images/bgs/mob1.png") !important;
+		background-image: url("../images/bgs/mhome1.png") !important;
 	}
 	#card2
 	{
-		background-image: url("../images/bgs/mob2.png") !important;
+		background-image: url("../images/bgs/mhome2.png") !important;
 	}
 	#card3
 	{
-		background-image: url("../images/bgs/mob3.png") !important;
+		background-image: url("../images/bgs/mhome3.png") !important;
 	}
 	#card4
 	{
-		background-image: url("../images/bgs/mob4.png") !important;
+		background-image: url("../images/bgs/mhome4.png") !important;
 	}
 }
 /*@media screen and (max-aspect-ratio: 560/1000)

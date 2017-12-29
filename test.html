@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+	<title>Test Vertical Scroll</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/naveffect.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/testeffect.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<body>
+
+	<div id='icons'>
+  <a href="#" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+<a href="#" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+<a href="#" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a>
+<a href="#" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a>
+<!-- <a href="#"	 class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a> -->
+</div>
+  <div class="container">
+    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
+    <input id="toggle" type="checkbox">
+
+    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+
+    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
+    <label class="toggle-container" for="toggle">
+        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
+        <span class="button button-toggle"></span>
+    </label>
+
+    <!-- The nav menu -->
+    <nav class="nav">
+      <a class="nav-item" href="index.html">Home</a>
+      <a class="nav-item" href="aboutus.html">About Us</a>
+      <a class="nav-item" href="events.html">Events</a>
+      <a class="nav-item" href="shield.html">KJSCE Shield</a>
+      <a class="nav-item" href="test.html">Shield ScoreCard</a>
+      <a class="nav-item" href="generalrules.html">General Rules</a>
+      <a class="nav-item" href="parvaah.html">Parvaah</a>
+      <a class="nav-item" href="sponsors.html">Sponsors</a>
+      <a class="nav-item" href="contactus.html">Contact Us</a>
+        <!-- <a id="navlogo" class="nav-item" href=""><img src="logo.png" style="height: 70px; width: auto;"></a> -->
+    </nav>
+
+    <!-- Just dummy content like in the animated gif -->
+<div id="navlogo"><img src="dummy.png"></div>
+</div>
+<div class="content">
+  <div class="scorecard" id="doughnut">
+    <h2>Comps</h2>
+    <div id="doughnutChart" class="chart"></div>
+  </div>
+  <div class="scorecard" id="doughnut1">
+    <h2>IT</h2>
+    <div id="doughnutChart1" class="chart"></div>
+  </div>
+  <div class="scorecard" id="doughnut2">
+    <h2>Mech</h2>
+    <div id="doughnutChart2" class="chart"></div>
+  </div>
+  <div class="scorecard" id="doughnut3">
+    <h2>Extc</h2>
+    <div id="doughnutChart3" class="chart"></div>
+  </div>
+  <div class="scorecard" id="doughnut4">
+    <h2>Etrx</h2>
+    <div id="doughnutChart4" class="chart"></div>
+  </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/temp.js"></script>
+</body>
+</html>

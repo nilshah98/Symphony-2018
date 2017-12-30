@@ -7,6 +7,7 @@
   <meta name="format-detection" content="telephone=no">
   <title>Shield</title>
   <link rel="stylesheet" type="text/css" href="assets/css/shieldeffects.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/testeffect.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="shortcut icon" href="../favicon.ico">  -->
   <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
@@ -271,10 +272,10 @@
       <input type="radio" id="tab2" name="tabGroup1" class="tab">
       <label for="tab2">Events</label>
 
-<!--       <input type="radio" id="tab3" name="tabGroup1" class="tab">
-      <label for="tab3">Shield</label>
+      <input type="radio" id="tab3" name="tabGroup1" class="tab">
+      <label for="tab3">Scorecard</label>
 
-      <input type="radio" id="tab4" name="tabGroup1" class="tab">
+<!--       <input type="radio" id="tab4" name="tabGroup1" class="tab">
       <label for="tab4">Informals</label>
 
       <input type="radio" id="tab5" name="tabGroup1" class="tab">
@@ -408,7 +409,33 @@
         </div>
 
       </div>
-
+<div class="tab__content">
+    <div class="scorecard" id="doughnut">
+    <h2>Comps</h2>
+    <div id="doughnutChart" class="chart"></div>
+    <div class="dept_logo"></div>
+  </div>
+  <div class="scorecard" id="doughnut1">
+    <h2>IT</h2>
+    <div id="doughnutChart1" class="chart"></div>
+    <div class="dept_logo"></div>
+  </div>
+  <div class="scorecard" id="doughnut2">
+    <h2>Mech</h2>
+    <div id="doughnutChart2" class="chart"></div>
+    <div class="dept_logo"></div>
+  </div>
+  <div class="scorecard" id="doughnut3">
+    <h2>Extc</h2>
+    <div id="doughnutChart3" class="chart"></div>
+    <div class="dept_logo"></div>
+  </div>
+  <div class="scorecard" id="doughnut4">
+    <h2>Etrx</h2>
+    <div id="doughnutChart4" class="chart"></div>
+    <div class="dept_logo"></div>
+  </div>
+</div>
     </div>
   </div>
   </div>
@@ -418,6 +445,8 @@
 
   <!-- classie.js by @desandro: https://github.com/desandro/classie -->
   <script src="assets/js/classie.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/temp.js"></script>
   <script src="assets/js/modalEffects.js"></script>
 
   <!-- for the blur effect -->

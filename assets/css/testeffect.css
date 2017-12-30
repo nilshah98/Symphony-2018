@@ -143,20 +143,28 @@ body {
 
 .scorecard
 {
+  margin-bottom:10px;
   text-align: center;
   color: #fff;
   display: inline-block;
-  /*width: 250px;*/
-  /*height: 250px;*/
+  width: 365px;
+  height: 365px;
   position: relative;
   /*top:50%;*/
   /*left: 50%;*/
   /*transform: translate(-50%,-50%);*/
 }
+
+.scorecard h2
+{
+  /*padding: 0;*/
+  margin-bottom:5px;
+}
 .chart {
   position: relative;
   width: 250px;
   height: 250px;
+  margin:auto;
   /*top: 50%;*/
   /*left: 50%;*/
   /*transform: translate(-50%,-50%);*/
@@ -180,6 +188,7 @@ body {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  z-index: 101;
 }
 .doughnutTip::after {
   position: absolute;
@@ -196,13 +205,49 @@ body {
 
 .doughnutSummary {
   position: absolute;
-  top: 50%;
+  top: 110%;
   left: 50%;
   color: #d5d5d5;
   text-align: center;
   text-shadow: 0 -1px 0 #111;
   cursor: default;
 }
+
+.dept_logo
+{
+  height: 115px;
+  width: 115px;
+  position: absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-image: url("../images/shield/COMPS.png");
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: contain ;
+}
+
+#doughnut .dept_logo
+{
+  background-image: url("../images/shield/COMPS.png");  
+}
+#doughnut1 .dept_logo
+{
+  background-image: url("../images/shield/IT.png");  
+}
+#doughnut2 .dept_logo
+{
+  background-image: url("../images/shield/MECH.png");  
+}
+#doughnut3 .dept_logo
+{
+  background-image: url("../images/shield/EXTC.png");  
+}
+#doughnut4 .dept_logo
+{
+  background-image: url("../images/shield/ETRX.png");  
+}
+
 
 .doughnutSummaryTitle {
   position: absolute;
@@ -224,3 +269,4 @@ body {
 .chart path:hover {
   opacity: 0.65;
 }
+

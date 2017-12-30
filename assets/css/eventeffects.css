@@ -90,6 +90,7 @@ body {
 .eventtitle
 {
   margin: 5px;
+  backface-visibility: hidden;
 }
 .eventheading
 {

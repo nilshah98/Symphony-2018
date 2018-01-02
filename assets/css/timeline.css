@@ -261,6 +261,13 @@ body {
     box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
   }
 }
+
+@media (max-width: 480px) {
+  .small
+  {
+    text-align: center !important;
+  }
+}
 @media (min-width: 720px) {
   #timeline .demo-card {
     max-width: 40%;

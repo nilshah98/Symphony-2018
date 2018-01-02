@@ -292,6 +292,10 @@ label[for*='5']:before {
 {
   background-image: url("https://media.giphy.com/media/3oxHQF1VVgH16wLmxy/giphy.gif");
 }
+#back-2
+{
+  background-image: url("https://media.giphy.com/media/l49JC9lvDlzawtAT6/giphy.gif");
+}
 .tab-wrap
 {
   background: #9A3767 !important;

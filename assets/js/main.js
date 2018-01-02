@@ -18,3 +18,25 @@ $(document).ready(function() {
 	}, 3000);
 	
 });
+
+function nextMsg() {
+    if (messages.length == 0) {
+        // once there is no more message, do whatever you want
+        // alert("redirecting");
+    } else {
+        // change content of message, fade in, wait, fade out and continue with next message
+        $('#loader_content').text(messages.pop()).fadeIn(100).delay(850).fadeOut(100, nextMsg);
+    }
+};
+// list of messages to display
+var messages = [
+	"Loading Awesomeness...",
+	"Hover over characters for more magic",
+	"Voila!",
+].reverse();
+
+// initially hide the message
+$('#message').hide();
+
+// start animation
+nextMsg();

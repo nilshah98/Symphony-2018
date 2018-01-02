@@ -7,59 +7,71 @@
 // doughnutchart4 - Etrx
 $(function(){
   $("#doughnutChart").drawDoughnutChart([
-    { title: "Antakshari",    value : 15,  color: "#78a7d8" },
-    { title: "Art",           value : 12,   color: "#067559" },
-    { title: "Dance",         value : 7,   color: "#7c50b9" },
-    { title: "Debate",        value : 10,   color: "#e049f3" },
-    { title: "Drama",         value : 20,   color: "#230555" },
-    { title: "Music",         value : 8,   color: "#D7DADB" },
-    { title: "Photography",   value : 12,   color: "#FC4349" },
-    { title: "Quiz",          value : 25,   color: "#F7E248" },
-    { title: "Jamboree",      value : 10,   color: "#64fb57" }
+    { title: "Antakshari",    value : 1,   color: "#fb736a" },
+    { title: "Art",           value : 1,   color: "#fb9c70" },
+    { title: "Dance",         value : 1,   color: "#fbd995" },
+    { title: "Debate",        value : 1,   color: "#9a3767" },
+    { title: "Drama",         value : 1,   color: "#7b295c" },
+    { title: "Music",         value : 1,   color: "#781545" },
+    { title: "Photography",   value : 1,   color: "#195561" },
+    { title: "Quiz",          value : 1,   color: "#348899" },
+    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart1").drawDoughnutChart([
-    { title: "Tokyo",         value : 12,  color: "#2C3E50" },
-    { title: "San Francisco", value:  8,   color: "#FC4349" },
-    { title: "New York",      value:  7,   color: "#6DBCDB" },
-    { title: "London",        value : 5,   color: "#F7E248" },
-    { title: "Sydney",        value : 4,   color: "#D7DADB" },
-    { title: "Berlin",        value : 2,   color: "#FFF" }
+    { title: "Antakshari",    value : 1,   color: "#fb736a" },
+    { title: "Art",           value : 1,   color: "#fb9c70" },
+    { title: "Dance",         value : 1,   color: "#fbd995" },
+    { title: "Debate",        value : 1,   color: "#9a3767" },
+    { title: "Drama",         value : 1,   color: "#7b295c" },
+    { title: "Music",         value : 1,   color: "#781545" },
+    { title: "Photography",   value : 1,   color: "#195561" },
+    { title: "Quiz",          value : 1,   color: "#348899" },
+    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart2").drawDoughnutChart([
-    { title: "Tokyo",         value : 12,  color: "#2C3E50" },
-    { title: "San Francisco", value:  8,   color: "#FC4349" },
-    { title: "New York",      value:  7,   color: "#6DBCDB" },
-    { title: "London",        value : 5,   color: "#F7E248" },
-    { title: "Sydney",        value : 4,   color: "#D7DADB" },
-    { title: "Berlin",        value : 2,   color: "#FFF" }
+    { title: "Antakshari",    value : 1,   color: "#fb736a" },
+    { title: "Art",           value : 1,   color: "#fb9c70" },
+    { title: "Dance",         value : 1,   color: "#fbd995" },
+    { title: "Debate",        value : 1,   color: "#9a3767" },
+    { title: "Drama",         value : 1,   color: "#7b295c" },
+    { title: "Music",         value : 1,   color: "#781545" },
+    { title: "Photography",   value : 1,   color: "#195561" },
+    { title: "Quiz",          value : 1,   color: "#348899" },
+    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart3").drawDoughnutChart([
-    { title: "Tokyo",         value : 12,  color: "#2C3E50" },
-    { title: "San Francisco", value:  8,   color: "#FC4349" },
-    { title: "New York",      value:  7,   color: "#6DBCDB" },
-    { title: "London",        value : 5,   color: "#F7E248" },
-    { title: "Sydney",        value : 4,   color: "#D7DADB" },
-    { title: "Berlin",        value : 2,   color: "#FFF" }
+    { title: "Antakshari",    value : 1,   color: "#fb736a" },
+    { title: "Art",           value : 1,   color: "#fb9c70" },
+    { title: "Dance",         value : 1,   color: "#fbd995" },
+    { title: "Debate",        value : 1,   color: "#9a3767" },
+    { title: "Drama",         value : 1,   color: "#7b295c" },
+    { title: "Music",         value : 1,   color: "#781545" },
+    { title: "Photography",   value : 1,   color: "#195561" },
+    { title: "Quiz",          value : 1,   color: "#348899" },
+    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart4").drawDoughnutChart([
-    { title: "Tokyo",         value : 12,  color: "#2C3E50" },
-    { title: "San Francisco", value:  8,   color: "#FC4349" },
-    { title: "New York",      value:  7,   color: "#6DBCDB" },
-    { title: "London",        value : 5,   color: "#F7E248" },
-    { title: "Sydney",        value : 4,   color: "#D7DADB" },
-    { title: "Berlin",        value : 2,   color: "#FFF" }
+    { title: "Antakshari",    value : 1,   color: "#fb736a" },
+    { title: "Art",           value : 1,   color: "#fb9c70" },
+    { title: "Dance",         value : 1,   color: "#fbd995" },
+    { title: "Debate",        value : 1,   color: "#9a3767" },
+    { title: "Drama",         value : 1,   color: "#7b295c" },
+    { title: "Music",         value : 1,   color: "#781545" },
+    { title: "Photography",   value : 1,   color: "#195561" },
+    { title: "Quiz",          value : 1,   color: "#348899" },
+    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
   ]);
 });
 /*!

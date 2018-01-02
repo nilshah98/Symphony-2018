@@ -222,8 +222,8 @@ body {
 #timeline {
   padding: 100px 0;
   /*background: #f7f7f7;*/
-  border-top: 1px solid rgba(191, 191, 191, 0.4);
-  border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+  /*border-top: 1px solid rgba(191, 191, 191, 0.4);*/
+  /*border-bottom: 1px solid rgba(191, 191, 191, 0.4);*/
 }
 #timeline h1 {
   text-align: center;

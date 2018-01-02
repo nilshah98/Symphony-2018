@@ -1,3 +1,20 @@
+.small
+{
+  display: block;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+#timeline .demo-card .head p
+{
+  padding: 10px;
+  text-align: justify;
+}
+
+.demo-card:nth-child(odd) .small
+{
+  text-align: right;
+}
 #icons {
   position: fixed;
   bottom: 0px;
@@ -252,7 +269,7 @@ body {
 @media (min-width: 1000px) {
   #timeline .demo-card {
     max-width: 450px;
-    height: 400px;
+    /*height: 400px;*/
     margin: 90px;
     margin-top: 45px;
     margin-bottom: 45px;
@@ -326,14 +343,14 @@ body {
   }
 }
 #timeline .demo-card .body {
-  background: #fff;
-  border: 1px solid rgba(191, 191, 191, 0.4);
+  /*background: #fff;*/
+  /*border: 1px solid rgba(191, 191, 191, 0.4);*/
   border-top: 0;
   padding: 15px;
 }
 @media (min-width: 1000px) {
   #timeline .demo-card .body {
-    height: 315px;
+    /*height: 315px;*/
   }
 }
 #timeline .demo-card .body p {

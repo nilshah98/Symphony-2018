@@ -456,6 +456,18 @@ a {
     height: 100%;
     z-index: 1000;
 }
+
+#loader_content
+{
+	opacity: 0;
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	top:60%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 1001;
+}
 #loader {
     display: block;
     position: relative;
@@ -576,6 +588,12 @@ a {
                 -o-transition: all 0.3s ease-out;  
                 transition: all 0.3s ease-out;
     }
+    .loaded #loader_content {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;  
+                -o-transition: all 0.3s ease-out;  
+                transition: all 0.3s ease-out;
+    }
     .loaded #loader-wrapper {
         visibility: hidden;
 
@@ -587,6 +605,7 @@ a {
                 -o-transition: all 0.3s 1s ease-out;  
                 transition: all 0.3s 1s ease-out;
     }
+
 /* Basic styles */
 * {
 	-webkit-box-sizing: border-box;

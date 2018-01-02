@@ -181,6 +181,7 @@ label[for*='5']:before {
 }
 .card
 {
+  backface-visibility: hidden;
   border-radius: 6px;
   -webkit-transition: 0.3s -webkit-box-shadow ease;
   transition: 0.3s -webkit-box-shadow ease;

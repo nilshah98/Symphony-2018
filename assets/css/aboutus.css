@@ -33,11 +33,6 @@
 .content {
   height: calc(100vh - 70px);
   overflow: auto;
-  background-image: url("../images/bgs/others/landscape.png") ;
-  /*background-attachment: fixed;*/
-  background-position: center ;
-  background-repeat: no-repeat ;
-  background-size: cover ;
 }
 
 @media screen and (max-aspect-ratio: 735/1000)
@@ -70,9 +65,18 @@ hr
   /*background: rgba(0,0,0,0.3);*/
   padding: 20px;
   max-width: 1000px;
-	margin: 20px auto;
+  margin: 0px auto;
   /*-webkit-box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
           /*box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
+}
+
+#main_bg
+{
+  background-image: url("../images/bgs/others/landscape.png") ;
+  /*background-attachment: fixed;*/
+  background-position: center ;
+  background-repeat: no-repeat ;
+  background-size: cover ;
 }
 
 p {

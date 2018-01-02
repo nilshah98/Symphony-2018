@@ -25,6 +25,12 @@ h1,h2,h3,h4,h5,h6
 {
   font-family: Portico;
 }
+
+.bottom
+{
+  height: 10px;
+  width: 100%;
+}
 /* boring stuff ie. content*/
 * {
   -webkit-box-sizing: border-box;

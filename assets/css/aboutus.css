@@ -70,17 +70,25 @@ hr
           /*box-shadow: 0 12px 23px rgba(0, 0, 0, 0.23), 0 10px 10px rgba(0, 0, 0, 0.19);*/
 }
 
-#main_bg
+/*#main_bg
 {
   background-image: url("../images/bgs/others/landscape.png") ;
-  /*background-attachment: fixed;*/
   background-position: center ;
   background-repeat: no-repeat ;
   background-size: cover ;
-}
+}*/
 
 p {
 	/*font-size: 1rem; */
 	line-height: 1.5em;
 	/*text-indent: 2.5rem;*/
+}
+#main_bg
+{
+  background-image: url("../images/bgs/others/landscape.png") ;
+  background-repeat: no-repeat ;
+  /*background-position: center;*/
+  /*background-size: cover;*/
+  background-color: #772C5D;
+
 }

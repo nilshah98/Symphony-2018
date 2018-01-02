@@ -9,6 +9,22 @@
     src: url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
     font-weight: bold;
 }
+@font-face {
+    font-family: Portico;
+    src: url('../fonts/Portico/Portico Light.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Portico;
+    src: url('../fonts/Portico/Portico Regular.otf') format('opentype');
+    font-weight: bold;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: Portico;
+}
 /* boring stuff ie. content*/
 * {
   -webkit-box-sizing: border-box;
@@ -248,7 +264,7 @@ label[for*='5']:before {
   width: 100%;
   border-radius: 6px;
 }
-.card-container:hover .card{
+.card-container:not(.nothover):hover .card{
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }

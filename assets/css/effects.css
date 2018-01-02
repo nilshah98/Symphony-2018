@@ -39,13 +39,30 @@ h1,h2,h3,h4,h5,h6
 	text-align: center;
 }
 
+#movie_link
+{
+	height: 30px;
+	width: 30px;	
+	background-color: #fff;
+	border-radius:10px 0px 0px 10px;
+	position: fixed;
+	bottom: 10px;
+	right: 0px;
+	z-index: 100;
+	text-align: center;
+}
+
 .center
 {
 	position: absolute;
 	top: calc(50% - 1px);
 	left: 50%;
 	transform: translate(-50%,-50%);
-	color: #9a3767;
+}
+
+.center i
+{
+	color: #9a3767 !important; 
 }
 
 i {

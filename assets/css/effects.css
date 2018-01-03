@@ -51,9 +51,9 @@ h1,h2,h3,h4,h5,h6
 #go_right {
     position: absolute;
     bottom: 50%;
-    right: 0px;
+    right: 10px;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0.0);
     width: 50px;
     height: 50px;
     display: block;
@@ -69,24 +69,18 @@ h1,h2,h3,h4,h5,h6
     z-index: 101;
 }
 #go_right i {
+	text-shadow: 0 0 3px #000;
     color: #fff;
     margin: 0;
     position: relative;
     left: 16px;
     top: 13px;
-    font-size: 25px;
+    font-size: 2rem;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-}
-#go_right:hover {
-    background: rgba(0, 0, 0, 0.9);
-}
-#go_right:hover i {
-    color: #fff;
-    left: 24px;
 }
 
 i {
@@ -95,7 +89,7 @@ i {
   cursor: pointer;
 }
 
-a {
+/*a {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -109,7 +103,7 @@ a {
   font-weight: 400;
   color: black;
 }
-
+*/
 
 #icons {
   position: fixed;
@@ -312,9 +306,9 @@ a {
 }
 
 @keyframes floatingleft {
-    from { transform: translate(0%,0); }
-    25%  { transform: translate(-50%,0); }
-    75%  { transform: translate(50%,0); }
+    from { transform: translate(0,0); }
+    25%  { transform: translate(-10px,0); }
+    75%  { transform: translate(10px,0); }
     to   { transform: translate(0%,0%); }    
 }
 

@@ -26,7 +26,7 @@ function nextMsg() {
         // alert("redirecting");
     } else {
         // change content of message, fade in, wait, fade out and continue with next message
-        $('#loader_content').text(messages.pop()).fadeIn(100).delay(850).fadeOut(100, nextMsg);
+        $('#loader_contentx').text(messages.pop()).fadeIn(100).delay(850).fadeOut(100, nextMsg);
     }
 };
 // list of messages to display

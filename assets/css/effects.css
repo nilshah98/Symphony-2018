@@ -545,7 +545,13 @@ a {
     height: 100%;
     z-index: 1000;
 }
-
+#loader_contentx
+{
+	text-align: center;
+	color: #fff;
+	margin: 10px;
+	font-weight: bold;
+}
 #loader_content
 {
 	/*opacity: 0;*/
@@ -557,7 +563,20 @@ a {
 	transform: translate(-50%,-50%);
 	z-index: 1001;
 }
-#loader {
+
+#loader
+{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height: auto;
+	width: 50vw;
+	z-index: 1001;
+
+}
+/*#loader {
     display: block;
     position: relative;
     left: 50%;
@@ -569,8 +588,8 @@ a {
     border: 3px solid transparent;
     border-top-color: #9a3767;
 
-    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
 
     z-index: 1001;
 }
@@ -586,8 +605,8 @@ a {
         border: 3px solid transparent;
         border-top-color: #fb736a;
 
-        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+        -webkit-animation: spin 3s linear infinite; 
+        animation: spin 3s linear infinite; 
     }
 
     #loader:after {
@@ -601,9 +620,9 @@ a {
         border: 3px solid transparent;
         border-top-color: #f9d995;
 
-        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-    }
+        -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+    }*/
 
     @-webkit-keyframes spin {
         0%   { 
@@ -643,10 +662,18 @@ a {
     }
 
     #loader-wrapper .loader-section.section-left {
+    	background-image: url("../../load.png");
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
         left: 0;
     }
 
     #loader-wrapper .loader-section.section-right {
+    	background-image: url("../../loadrev.png");
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
         right: 0;
     }
 

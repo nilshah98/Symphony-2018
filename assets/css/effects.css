@@ -735,7 +735,7 @@ html, body {
 body {
 	font-family: Lato;
 	background-color: #7b295c;
-	overflow-y: hidden;
+	/*overflow-y: hidden;*/
 	/*jugaad to make scrollbar disappear*/
 }
 

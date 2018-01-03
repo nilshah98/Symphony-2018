@@ -31,7 +31,7 @@ function nextMsg() {
 var messages = [
   "Assembling Bolt the Robot...",
   "Prancing the plains for Bob the Caveman...",
-  "Excavating the earh for Cleopetra's tomb...",
+  "Excavating the earth for Cleopetra's tomb...",
   "Testing Frank's Polyjuice potion...",
   "Hover over characters for more magic...",
   "Hover over characters for more magic...",

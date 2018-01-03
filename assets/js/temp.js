@@ -7,71 +7,71 @@
 // doughnutchart4 - Etrx
 $(function(){
   $("#doughnutChart").drawDoughnutChart([
-    { title: "Antakshari",    value : 1,   color: "#fb736a" },
-    { title: "Art",           value : 1,   color: "#fb9c70" },
-    { title: "Dance",         value : 1,   color: "#fbd995" },
-    { title: "Debate",        value : 1,   color: "#9a3767" },
-    { title: "Drama",         value : 1,   color: "#7b295c" },
-    { title: "Music",         value : 1,   color: "#781545" },
-    { title: "Photography",   value : 1,   color: "#195561" },
-    { title: "Quiz",          value : 1,   color: "#348899" },
-    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
+    { title: "Indoor Sports",    value : 78,   color: "#fb736a" },
+    { title: "Technical",           value : 16,   color: "#fb9c70" },
+    { title: "Dance",         value : 0,   color: "#fbd995" },
+    { title: "Debate",        value : 0,   color: "#9a3767" },
+    { title: "Drama",         value : 0,   color: "#7b295c" },
+    { title: "Music",         value : 0,   color: "#781545" },
+    { title: "Photography",   value : 0,   color: "#195561" },
+    { title: "Quiz",          value : 0,   color: "#348899" },
+    { title: "Jamboree",      value : 0,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart1").drawDoughnutChart([
-    { title: "Antakshari",    value : 1,   color: "#fb736a" },
-    { title: "Art",           value : 1,   color: "#fb9c70" },
-    { title: "Dance",         value : 1,   color: "#fbd995" },
-    { title: "Debate",        value : 1,   color: "#9a3767" },
-    { title: "Drama",         value : 1,   color: "#7b295c" },
-    { title: "Music",         value : 1,   color: "#781545" },
-    { title: "Photography",   value : 1,   color: "#195561" },
-    { title: "Quiz",          value : 1,   color: "#348899" },
-    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
+    { title: "Indoor Sports",    value : 62,   color: "#fb736a" },
+    { title: "Technical",           value : 14,   color: "#fb9c70" },
+    { title: "Dance",         value : 0,   color: "#fbd995" },
+    { title: "Debate",        value : 0,   color: "#9a3767" },
+    { title: "Drama",         value : 0,   color: "#7b295c" },
+    { title: "Music",         value : 0,   color: "#781545" },
+    { title: "Photography",   value : 0,   color: "#195561" },
+    { title: "Quiz",          value : 0,   color: "#348899" },
+    { title: "Jamboree",      value : 0,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart2").drawDoughnutChart([
-    { title: "Antakshari",    value : 1,   color: "#fb736a" },
-    { title: "Art",           value : 1,   color: "#fb9c70" },
-    { title: "Dance",         value : 1,   color: "#fbd995" },
-    { title: "Debate",        value : 1,   color: "#9a3767" },
-    { title: "Drama",         value : 1,   color: "#7b295c" },
-    { title: "Music",         value : 1,   color: "#781545" },
-    { title: "Photography",   value : 1,   color: "#195561" },
-    { title: "Quiz",          value : 1,   color: "#348899" },
-    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
+    { title: "Indoor Sports",    value : 78,   color: "#fb736a" },
+    { title: "Technical",           value : 25,   color: "#fb9c70" },
+    { title: "Dance",         value : 0,   color: "#fbd995" },
+    { title: "Debate",        value : 0,   color: "#9a3767" },
+    { title: "Drama",         value : 0,   color: "#7b295c" },
+    { title: "Music",         value : 0,   color: "#781545" },
+    { title: "Photography",   value : 0,   color: "#195561" },
+    { title: "Quiz",          value : 0,   color: "#348899" },
+    { title: "Jamboree",      value : 0,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart3").drawDoughnutChart([
-    { title: "Antakshari",    value : 1,   color: "#fb736a" },
-    { title: "Art",           value : 1,   color: "#fb9c70" },
-    { title: "Dance",         value : 1,   color: "#fbd995" },
-    { title: "Debate",        value : 1,   color: "#9a3767" },
-    { title: "Drama",         value : 1,   color: "#7b295c" },
-    { title: "Music",         value : 1,   color: "#781545" },
-    { title: "Photography",   value : 1,   color: "#195561" },
-    { title: "Quiz",          value : 1,   color: "#348899" },
-    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
+    { title: "Indoor Sports",    value : 143,   color: "#fb736a" },
+    { title: "Technical",           value : 49,   color: "#fb9c70" },
+    { title: "Dance",         value : 0,   color: "#fbd995" },
+    { title: "Debate",        value : 0,   color: "#9a3767" },
+    { title: "Drama",         value : 0,   color: "#7b295c" },
+    { title: "Music",         value : 0,   color: "#781545" },
+    { title: "Photography",   value : 0,   color: "#195561" },
+    { title: "Quiz",          value : 0,   color: "#348899" },
+    { title: "Jamboree",      value : 0,   color: "#5c99a5" }
   ]);
 });
 
 $(function(){
   $("#doughnutChart4").drawDoughnutChart([
-    { title: "Antakshari",    value : 1,   color: "#fb736a" },
-    { title: "Art",           value : 1,   color: "#fb9c70" },
-    { title: "Dance",         value : 1,   color: "#fbd995" },
-    { title: "Debate",        value : 1,   color: "#9a3767" },
-    { title: "Drama",         value : 1,   color: "#7b295c" },
-    { title: "Music",         value : 1,   color: "#781545" },
-    { title: "Photography",   value : 1,   color: "#195561" },
-    { title: "Quiz",          value : 1,   color: "#348899" },
-    { title: "Jamboree",      value : 1,   color: "#5c99a5" }
+    { title: "Indoor Sports",    value : 39,   color: "#fb736a" },
+    { title: "Technical",           value : 36,   color: "#fb9c70" },
+    { title: "Dance",         value : 0,   color: "#fbd995" },
+    { title: "Debate",        value : 0,   color: "#9a3767" },
+    { title: "Drama",         value : 0,   color: "#7b295c" },
+    { title: "Music",         value : 0,   color: "#781545" },
+    { title: "Photography",   value : 0,   color: "#195561" },
+    { title: "Quiz",          value : 0,   color: "#348899" },
+    { title: "Jamboree",      value : 0,   color: "#5c99a5" }
   ]);
 });
 /*!

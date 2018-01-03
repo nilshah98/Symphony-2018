@@ -16,21 +16,40 @@ h1,h2,h3,h4,h5,h6
 }
 .small
 {
-  display: block;
-  font-size: 1.4rem;
-  text-decoration: underline;
+  padding: 0.3rem;
+  font-size: 1.7rem;
+  /*background: rgba(0,0,0,0.4);*/
+  /*text-decoration-style: solid;*/
+  font-family: Portico;
+  border-radius: 2px;
 }
-
+mark
+{
+  background-color: #772C5D;
+  color: #fff;
+}
 #timeline .demo-card .head p
 {
   padding: 10px;
-  text-align: justify;
+  /*margin:0.3rem;*/
+}
+
+.demo-card:nth-child(odd) .head
+{
+  text-align: right;
 }
 
 .demo-card:nth-child(odd) .small
 {
-  text-align: right;
+  text-decoration:underline #ccc;
 }
+
+.demo-card:nth-child(even) .small
+{
+  text-decoration:overline #ccc;
+}
+
+
 #icons {
   position: fixed;
   bottom: 0px;

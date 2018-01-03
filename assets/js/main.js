@@ -5,19 +5,17 @@
   | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
  _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
  \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
-
 Oh nice, welcome to the js file of dreams.
 Enjoy responsibly!
 @ihatetomatoes
-
 */
 
 $(document).ready(function() {
-	setTimeout(function(){
-		$('body').addClass('loaded');
-		$('h1').css('color','#222222');
-	}, 3000);
-	
+  setTimeout(function(){
+    $('body').addClass('loaded');
+    $('h1').css('color','#222222');
+  }, 7000);
+  
 });
 
 function nextMsg() {
@@ -31,9 +29,13 @@ function nextMsg() {
 };
 // list of messages to display
 var messages = [
-	"Loading Awesomeness...",
-	"Hover over characters for more magic",
-	"Voila!",
+  "Assembling Bolt the Robot...",
+  "Prancing the plains for Bob the Caveman...",
+  "Excavating the earh for Cleopetra's tomb...",
+  "Testing Frank's Polyjuice potion...",
+  "Hover over characters for more magic...",
+  "Hover over characters for more magic...",
+  "Voila!",
 ].reverse();
 
 // initially hide the message

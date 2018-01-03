@@ -744,6 +744,7 @@ a {
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: nowrap;
+	height: calc(100vh - 48px);
 	padding-bottom: 11px;
 }
 .card {

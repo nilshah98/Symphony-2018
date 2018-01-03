@@ -11,6 +11,7 @@ Enjoy responsibly!
 @ihatetomatoes
 
 */
+
 $(document).ready(function() {
 	setTimeout(function(){
 		$('body').addClass('loaded');
@@ -40,3 +41,9 @@ $('#message').hide();
 
 // start animation
 nextMsg();
+
+// $('#go_right').click(function() {
+//     $('#scrolling-wrapper').animate({
+//         scrollLeft : 100 
+//     }, 500);
+// });

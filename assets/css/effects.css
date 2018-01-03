@@ -42,10 +42,51 @@ h1,h2,h3,h4,h5,h6
 	background-color: #fff;
 	border-radius:10px 0px 0px 10px;
 	position: fixed;
-	bottom: 1px;
+	bottom: 0px;
 	right: 0px;
 	z-index: 100;
 	text-align: center;
+}
+
+#go_right {
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 101;
+}
+#go_right i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 25px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#go_right:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#go_right:hover i {
+    color: #fff;
+    left: 24px;
 }
 
 i {
@@ -255,11 +296,28 @@ a {
     /*margin-top: 5px;*/
 }
 
+.floatingleft {  
+    animation-name: floatingleft;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /*margin-left: 30px;*/
+    /*margin-top: 5px;*/
+}
+
 @keyframes floating {
     from { transform: translate(-50%,  -50%); }
     65%  { transform: translate(-50%, calc(-50% + 15px)); }
     to   { transform: translate(-50%, -50%); }    
 }
+
+@keyframes floatingleft {
+    from { transform: translate(0%,0); }
+    25%  { transform: translate(-50%,0); }
+    75%  { transform: translate(50%,0); }
+    to   { transform: translate(0%,0%); }    
+}
+
 
 .textcontent
 {
@@ -403,7 +461,7 @@ a {
 	#homepage_heading
 	{
 		height: calc(100% - 30px);
-		width: 100%;
+		width: 85%;
 	}
 	.textcontent
 	{

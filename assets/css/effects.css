@@ -290,6 +290,15 @@ a {
     /*margin-top: 5px;*/
 }
 
+.floatingvert {  
+    animation-name: floatingvert;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /*margin-left: 30px;*/
+    /*margin-top: 5px;*/
+}
+
 .floatingleft {  
     animation-name: floatingleft;
     animation-duration: 3s;
@@ -309,6 +318,13 @@ a {
     from { transform: translate(0,0); }
     25%  { transform: translate(-10px,0); }
     75%  { transform: translate(10px,0); }
+    to   { transform: translate(0%,0%); }    
+}
+
+@keyframes floatingvert {
+    from { transform: translate(0,0); }
+    25%  { transform: translate(0,-10px); }
+    75%  { transform: translate(0,10px); }
     to   { transform: translate(0%,0%); }    
 }
 
@@ -366,6 +382,16 @@ a {
 	bottom: calc(2.8rem - 11px);
 	left: 41vw;
 }
+#textcard1
+{
+	opacity: 1;
+	position: absolute;
+	top: 10%;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	font-size: 1.5rem;
+}
 #textcard2
 {
 	opacity: 0;
@@ -401,6 +427,22 @@ a {
 #trigger1:hover ~ #textcard2
 {
 	opacity: 1;
+}
+#trigger1:hover ~ #textcard1
+{
+	opacity: 0;
+}
+#trigger2:hover ~ #textcard1
+{
+	opacity: 0;
+}
+#trigger3:hover ~ #textcard1
+{
+	opacity: 0;
+}
+#trigger4:hover ~ #textcard1
+{
+	opacity: 0;
 }
 #trigger2:hover ~ #textcard3
 {

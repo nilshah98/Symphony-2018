@@ -70,3 +70,23 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollLeft();
+    var docViewBottom = docViewTop + $(window).width();
+    docViewBottom-=100;
+    // offset of added
+    var elemTop = $(elem).offset().left;
+    var elemBottom = elemTop + $(elem).width();
+    // console.log(docViewTop,docViewBottom,elemTop,elemBottom);
+    return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom >= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$('#scrolling-wrapper').scroll(function() {  
+    // alert("Working");  
+    if(isScrolledIntoView($('#card2')))
+    {
+        $("#go_right").hide();
+    }    
+});

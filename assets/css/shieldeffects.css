@@ -103,7 +103,7 @@ body {
 .eventtitle
 {
   margin: 5px;
-  backface-visibility: hidden;
+  /*backface-visibility: hidden;*/
 }
 .eventheading
 {

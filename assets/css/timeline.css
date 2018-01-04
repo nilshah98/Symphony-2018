@@ -41,12 +41,12 @@ mark
 
 .demo-card:nth-child(odd) .small
 {
-  text-decoration:underline #ccc;
+  /*text-decoration:underline #ccc;*/
 }
 
 .demo-card:nth-child(even) .small
 {
-  text-decoration:overline #ccc;
+  /*text-decoration:overline #ccc;*/
 }
 
 

@@ -923,6 +923,18 @@ a {
 	}
 }
 
+@media only screen and (max-height: 400px)
+{
+	.trigger
+	{
+		display: none;
+	}
+	.textcontent
+	{
+		display: none;
+	}
+}
+
 @media screen and (max-aspect-ratio: 735/1000)
 {
 	#card1

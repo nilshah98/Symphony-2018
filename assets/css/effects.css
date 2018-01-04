@@ -576,6 +576,42 @@ a {
 	z-index: 1001;
 
 }
+.sp {
+  width: 32px;
+  height: 32px;
+  clear: both;
+  margin: 20px auto;
+}
+
+/* Spinner LoadBar */
+.sp-loadbar {
+  width: 50vw;
+  height: 18px;
+  border: 1px #9A3767 solid;
+  border-radius: 4px;
+  background: linear-gradient(-60deg, transparent 0%, transparent 50%, #7B295C 50%, #7B295C 75%, transparent 75%, transparent);
+  background-size: 20px 30px;
+  background-position: 0px 0px;
+  -webkit-animation: spLoadBar 0.8s infinite linear;
+  animation: spLoadBar 0.8s infinite linear;
+}
+
+@-webkit-keyframes spLoadBar {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -20px 0px;
+  }
+}
+@keyframes spLoadBar {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -20px 0px;
+  }
+}
 /*#loader {
     display: block;
     position: relative;
@@ -654,7 +690,7 @@ a {
         top: 0;
         width: 51%;
         height: 100%;
-        background: #222222;
+        background: #222;
         z-index: 1000;
         -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
         -ms-transform: translateX(0);  /* IE 9 */
@@ -662,18 +698,18 @@ a {
     }
 
     #loader-wrapper .loader-section.section-left {
-    	background-image: url("../../load.png");
+/*    	background-image: url("../../load.png");
     	background-repeat: no-repeat;
     	background-position: center;
-    	background-size: cover;
+    	background-size: cover;*/
         left: 0;
     }
 
     #loader-wrapper .loader-section.section-right {
-    	background-image: url("../../loadrev.png");
+/*    	background-image: url("../../loadrev.png");
     	background-repeat: no-repeat;
     	background-position: center;
-    	background-size: cover;
+    	background-size: cover;*/
         right: 0;
     }
 

@@ -48,6 +48,8 @@ $(document).ready(function(){
   // Add smooth scrolling to all links
   $("#right").on('click', function(event) {
 
+    $("#go_right").hide();
+
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior

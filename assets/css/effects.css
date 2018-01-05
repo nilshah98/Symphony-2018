@@ -28,24 +28,64 @@ h1,h2,h3,h4,h5,h6
 
 #game_link
 {
+	width: auto;
 	background-color: #fff;
 	border-radius:10px 0px 0px 10px;
 	position: fixed;
 	top: 80px;
-	right: 0px;
+	right: -140px;
 	z-index: 100;
-	text-align: center;
+	/*text-align: center;*/
+	transition: all 1s ease-in-out;
+}
+
+#game_link a
+{
+	color: #9a3767;
+	display: initial;
+}
+
+#game_link a:before
+{
+	font-family: 'FontAwesome';
+	content: '\f11b';
+	padding:5px;	
+}
+
+#game_link:hover
+{
+	transform: translateX(-140px);
 }
 
 #movie_link
 {
+	width: auto;
 	background-color: #fff;
 	border-radius:10px 0px 0px 10px;
 	position: fixed;
 	bottom: 0px;
-	right: 0px;
+	right: -260px;
 	z-index: 100;
-	text-align: center;
+	/*text-align: center;*/
+	transition: all 1s ease-in-out;
+}
+
+#movie_link a
+{
+	color: #9a3767;
+	display: initial;
+}
+
+#movie_link a:before
+{
+	font-family: 'FontAwesome';
+	content: '\f03d';
+	padding:5px;
+}
+
+#movie_link:hover
+{
+	transform: translateX(-260px);
 }
 
 #go_right {

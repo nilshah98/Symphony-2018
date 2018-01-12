@@ -103,7 +103,7 @@ body {
 .eventtitle
 {
   margin: 5px;
-  /*backface-visibility: hidden;*/
+  backface-visibility: hidden;
 }
 .eventheading
 {
@@ -287,7 +287,7 @@ label[for*='5']:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 100%;
   width: 100%;
 }

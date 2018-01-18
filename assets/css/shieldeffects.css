@@ -836,3 +836,7 @@ label
 /*  -webkit-box-shadow: 0 1px 0 #9A3767 inset;
           box-shadow: 0 1px 0 #9A3767 inset;*/
 }
+
+.branch {
+  font-family: Lato;
+}

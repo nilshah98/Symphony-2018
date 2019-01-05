@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --color-yellow: #FFDA1E;
+    --color-green: #17A67B;
+    --color-blue: #00A6FF;
+    --color-pink: #FF03F2;
+    --color-red: #F80C3A;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--color-yellow);
+}
+
+.header{
+    height: 100px;
+}
+.aboutus a{
+    color: #F80C3A ;
+}
+.theme a{
+    color:  #D42252;
+}
+.events a{
+    color: #BE3061;
+}
+.proshows a{
+    color:  #AB3D6C;
+}
+.shield a{
+    color: #97477B;
+}
+.syhahi a{
+    color:  #7F578B;
+}
+.rules a{
+    color: #68649A;
+}
+.parvaah a{
+    color: #5471A8;
+}
+.sponsors a{
+    color: #3B80B9;
+}
+.reachus a{
+    color: #228FC9;
+}
+.header img{
+    margin-top: 10px;
+    margin-left: 10px;
+    height:90px;
+    width: auto;
+}
+
+.homepage{
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+}
+@font-face {
+    font-family: Portico;
+    src: url('../fonts/Portico/Portico\ Regular.otf') format('opentype');
+    font-weight: bold;
+}
+.homepage__menu{
+    /* font: url("../fonts/Portico/Portico\ Regular.otf"); */
+    font-family: Portico;
+    font-weight: bold;
+    width: 45vw;
+    font-size: 50px;
+    line-height: 38px;
+    padding-left: 5vw;
+}
+
+.homepage__title{
+    display: inline;
+    cursor: pointer;
+}
+
+.homepage__img{
+    width: 55vw;
+    position: relative;
+}
+
+.homepage__imgContainer{
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+.homepage__img img{
+    width: 100%;
+    height: auto;
+}
+
+.homepage__imgChange{
+    transition: all 0.25s linear;
+}
+
+.socialmedia img{
+    width: 40px;
+    height: auto;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px){
+    .homepage {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        height: calc( 100vh - 100px );
+    }
+
+
+    .homepage__img{
+        width: 100vw;
+        display: block;
+        position: static;
+    }
+
+    .homepage__imgContainer{
+        width: 80vw;
+        margin: auto;
+        position: static;
+        transform: translate(0,0);
+    }
+
+    .homepage__menu{
+        width: 100vw;
+        font-size: 30px;
+        line-height: 26px;
+    }
+
+    .header{
+        height: 50px;
+    }
+
+.socialmedia{
+    flex-direction: row;
+}
+}

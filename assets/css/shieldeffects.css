@@ -45,6 +45,7 @@ h1,h2,h3,h4,h5,h6
 }
 
 .eventsbg {
+  width: 100vw;
   background-image: url("../images/bgs/others/shield.png") ;
   /*background-attachment: fixed;*/
   background-position: center ;

@@ -1,147 +1,243 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
-  <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/naveffect.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/timeline.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/aboutus.css">
-</head>
-<body>
-  <div class="container">
-    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
-    <input id="toggle" type="checkbox">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/naveffect.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/timeline.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/aboutus.css" />
+  </head>
+  <body class="demo-6">
+    <main class="main--demo-6">
+      <div class="content content--demo-6">
+        <!-- HAMBURGER ICON -->
+        <div class="hamburger hamburger--demo-6 js-hover">
+          <div class="hamburger__line hamburger__line--01">
+            <div
+              class="hamburger__line-in hamburger__line-in--01 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--02">
+            <div
+              class="hamburger__line-in hamburger__line-in--02 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--03">
+            <div
+              class="hamburger__line-in hamburger__line-in--03 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--cross01">
+            <div
+              class="hamburger__line-in hamburger__line-in--cross01 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--cross02">
+            <div
+              class="hamburger__line-in hamburger__line-in--cross02 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+        </div>
 
-    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
+        <!-- MAIN CONTENT GOES HERE -->
+        <div class="content">
+          <div id="main_bg">
+            <div class="main">
+              <h1>About Symphony</h1>
+              <p>
+                Symphony is the annual cultural festival of KJSCE. Starting out
+                in 1987 as Jamboree, Symphony has come a long way. A mix with
+                all the right ingredients to foster creativity and originality,
+                Symphony is a rendezvous for all the art geeks, drama buffs,
+                music aficionados, literary fanatics and dance enthusiasts. With
+                huge crowds, exuberant participation and eminent personalities
+                like Ustad Zakir Hussain, Sushant Singh Rajput and several
+                others gracing the festival over the course of its history,
+                Symphony offers an escape from reality and an entry into the
+                world of dreams..
+              </p>
+              <!-- <hr> -->
+              <br />
+              <h1>About KJSCE</h1>
+              <p>
+                Set in the heart of Mumbai, KJSCE is located in the Somaiya
+                Vidyavihar campus. With a total of 34 institutions in its 65
+                acre campus, Somaiya Vidyavihar has become an educational hub.
+                Since its establishment in 1983, KJSCE has grown in leaps and
+                bounds. Boasting of a huge campus and state of the art
+                facilities KJSCE has surpassed many of its contemporaries and
+                presented itself as one of the premier engineering colleges in
+                Mumbai. And with another feather in its cap in the form of being
+                the only self financed Engineering College to be granted
+                autonomous status whilst maintaining its affiliation to the
+                University of Mumbai.
+              </p>
+              <!-- <hr> -->
+              <br />
+            </div>
+            <section id="timeline">
+              <!-- <h1>A Flexbox Timeline</h1> -->
+              <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
+              <div class="demo-card-wrapper">
+                <div class="demo-card demo-card--step1">
+                  <div class="head">
+                    <!--         <div class="number-box">
+              <span>01</span>
+            </div> -->
+                    <p>
+                      <span class="small">1987</span><br />Maiden edition of
+                      Symphony under the name of “Jamboree” featuring events
+                      like Treasure Hunt and Musical Antakshari.
+                    </p>
+                  </div>
+                  <div class="body">
+                    <img src="assets/images/timeline/1987.png" alt="Graphic" />
+                  </div>
+                </div>
 
-    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
-    <label class="toggle-container" for="toggle">
-        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
-        <span class="button button-toggle"></span>
-    </label>
+                <div class="demo-card demo-card--step2">
+                  <div class="head">
+                    <!--         <div class="number-box">
+              <span>02</span>
+            </div> -->
+                    <p>
+                      <span class="small">1994</span><br />Ustad Zakir Hussain
+                      performs at Symphony.
+                    </p>
+                  </div>
+                  <div class="body">
+                    <img src="assets/images/timeline/1994.png" alt="Graphic" />
+                  </div>
+                </div>
 
-    <!-- The nav menu -->
-    <nav class="nav">
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="aboutus.html">About Us</a>
-      <a class="nav-item" href="events.html">Events</a>
-      <a class="nav-item" href="shield.html">KJSCE Shield</a>
-      <a class="nav-item" href="generalrules.html">General Rules</a>
-      <a class="nav-item" href="parvaah.html">Parvaah</a>
-      <a class="nav-item" href="sponsors.html">Sponsors</a>
-      <a class="nav-item" href="contactus.html">Contact Us</a>
-        <!-- <a id="navlogo" class="nav-item" href=""><img src="logo.png" style="height: 70px; width: auto;"></a> -->
-    </nav>
+                <div class="demo-card demo-card--step3">
+                  <div class="head">
+                    <!--         <div class="number-box">
+              <span>03</span>
+            </div> -->
+                    <p>
+                      <span class="small">1999</span><br />Symphony acclaimed as
+                      the ‘Best Festival of Mumbai’, featuring performances by
+                      notable stars like Hariharan, Devaki Pandit, Fazal
+                      Qureshi, Taufiq Qureshi, Louis Banks, and Sultan Khan.
+                    </p>
+                  </div>
+                  <div class="body">
+                    <img src="assets/images/timeline/1999.png" alt="Graphic" />
+                  </div>
+                </div>
 
-    <!-- Just dummy content like in the animated gif -->
-    <div id="navlogo"><a href="index.html"><img src="dummy.png"></a></div>
+                <div class="demo-card demo-card--step4">
+                  <div class="head">
+                    <!--         <div class="number-box">
+              <span>04</span>
+            </div> -->
+                    <p>
+                      <span class="small">2009</span><br />Symphony celebrated
+                      for 3 days for the first time, on the occasion of the
+                      Silver Jubilee of K.J. Somaiya College of Engineering.
+                    </p>
+                  </div>
+                  <div class="body">
+                    <img src="assets/images/timeline/2009.png" alt="Graphic" />
+                  </div>
+                </div>
 
-</div>
-<!-- Fucked up windows, testing git for ubuntu, please work -->
-<div class="content">
-  <div id="main_bg">  
-    <div class="main">
-    <h1>About Symphony</h1>
-    <p>
-        Symphony is the annual cultural festival of KJSCE. Starting out in 1987 as Jamboree, Symphony has come a long way. A mix with all the right ingredients to foster creativity and originality, Symphony is a rendezvous for all the art geeks, drama buffs, music aficionados, literary fanatics and dance enthusiasts. With huge crowds, exuberant participation and eminent personalities like Ustad Zakir Hussain, Sushant Singh Rajput and several others gracing the festival over the course of its history, Symphony offers an escape from reality and an entry into the world of dreams..
-    </p>
-    <!-- <hr> -->
-    <br>
-    <h1>About KJSCE</h1>
-    <p>
-    Set in the heart of Mumbai, KJSCE is located in the Somaiya Vidyavihar campus. With a total of 34 institutions in its 65 acre campus, Somaiya Vidyavihar has become an educational hub. Since its establishment in 1983, KJSCE has grown in leaps and bounds. Boasting of a huge campus and state of the art facilities KJSCE has surpassed many of its contemporaries and presented itself as one of the premier engineering colleges in Mumbai. And with another feather in its cap in the form of being the only self financed Engineering College to be granted autonomous status whilst maintaining its affiliation to the University of Mumbai.</p>
-    <!-- <hr> -->
-    <br>
-    </div>
-<section id=timeline>
-  <!-- <h1>A Flexbox Timeline</h1> -->
-  <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
-  <div class="demo-card-wrapper">
-    <div class="demo-card demo-card--step1">
-      <div class="head">
-<!--         <div class="number-box">
-          <span>01</span>
-        </div> -->
-        <p><span class="small">1987</span><br>Maiden edition of Symphony under the name of “Jamboree” featuring events like Treasure Hunt and Musical Antakshari.</p>
+                <div class="demo-card demo-card--step5">
+                  <div class="head">
+                    <!--         <div class="number-box">
+              <span>05</span>
+            </div> -->
+                    <p>
+                      <span class="small">2015</span><br />Symphony 2015 was
+                      graced by Sushant Singh Rajput and Anu Malik, and saw
+                      inception of Parvaah, the social initiative of K.J.
+                      Somaiya College of Engineering.
+                    </p>
+                  </div>
+                  <div class="body">
+                    <img src="assets/images/timeline/2015.png" alt="Graphic" />
+                  </div>
+                </div>
+
+                <div class="demo-card demo-card--step6">
+                  <div class="head">
+                    <!--         <div class="number-box">
+              <span>06</span>
+            </div> -->
+                    <p>
+                      <span class="small">2017</span><br />Symphony hits
+                      record-breaking footfall of 15,000, featuring performances
+                      from renowned international as well as homegrown artists
+                      such as DJ Candice, Kenny Sebastian, and Lagori.
+                    </p>
+                  </div>
+                  <div class="body">
+                    <img src="assets/images/timeline/2017.png" alt="Graphic" />
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- NAVIGATION MENU GOES HERE -->
+        <div class="global-menu">
+          <div class="global-menu__wrap">
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Data Science</a
+            >
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Research</a
+            >
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Case Studies</a
+            >
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <!-- SVG EFFECT -->
+        <svg
+          class="shape-overlays"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#00c99b" />
+              <stop offset="100%" stop-color="#ff0ea1" />
+            </linearGradient>
+            <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffd392" />
+              <stop offset="100%" stop-color="#ff3898" />
+            </linearGradient>
+            <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#110046" />
+              <stop offset="100%" stop-color="#32004a" />
+            </linearGradient>
+          </defs>
+          <path class="shape-overlays__path"></path>
+          <path class="shape-overlays__path"></path>
+          <path class="shape-overlays__path"></path>
+        </svg>
       </div>
-      <div class="body">
+    </main>
 
-        <img src="assets/images/timeline/1987.png" alt="Graphic">
-      </div>
-    </div>
-
-    <div class="demo-card demo-card--step2">
-      <div class="head">
-<!--         <div class="number-box">
-          <span>02</span>
-        </div> -->
-        <p><span class="small">1994</span><br>Ustad Zakir Hussain performs at Symphony.</p>
-      </div>
-      <div class="body">
-
-        <img src="assets/images/timeline/1994.png" alt="Graphic">
-      </div>
-    </div>
-
-    <div class="demo-card demo-card--step3">
-      <div class="head">
-<!--         <div class="number-box">
-          <span>03</span>
-        </div> -->
-        <p><span class="small">1999</span><br>Symphony acclaimed as the ‘Best Festival of Mumbai’, featuring performances by notable stars like Hariharan, Devaki Pandit, Fazal Qureshi, Taufiq Qureshi, Louis Banks, and Sultan Khan.</p>
-      </div>
-      <div class="body">
-
-        <img src="assets/images/timeline/1999.png" alt="Graphic">
-      </div>
-    </div>
-
-    <div class="demo-card demo-card--step4">
-      <div class="head">
-<!--         <div class="number-box">
-          <span>04</span>
-        </div> -->
-        <p><span class="small">2009</span><br>Symphony celebrated for 3 days for the first time, on the occasion of the Silver Jubilee of K.J. Somaiya College of Engineering.</p>
-      </div>
-      <div class="body">
-
-        <img src="assets/images/timeline/2009.png" alt="Graphic">
-      </div>
-    </div>
-
-    <div class="demo-card demo-card--step5">
-      <div class="head">
-<!--         <div class="number-box">
-          <span>05</span>
-        </div> -->
-        <p><span class="small">2015</span><br>Symphony 2015 was graced by Sushant Singh Rajput and Anu Malik, and saw inception of Parvaah, the social initiative of K.J. Somaiya College of Engineering.</p>
-      </div>
-      <div class="body">
-
-        <img src="assets/images/timeline/2015.png" alt="Graphic">
-      </div>
-    </div>
-
-    <div class="demo-card demo-card--step6">
-      <div class="head">
-<!--         <div class="number-box">
-          <span>06</span>
-        </div> -->
-        <p><span class="small">2017</span><br>Symphony hits record-breaking footfall of 15,000, featuring performances from renowned international as well as homegrown artists such as DJ Candice, Kenny Sebastian, and Lagori.</p>
-      </div>
-      <div class="body">
-
-        <img src="assets/images/timeline/2017.png" alt="Graphic">
-      </div>
-    </div>
-    
-  </div>
-</section>
-</div>
-</div>
-</body>
+    <!-- Fucked up windows, testing git for ubuntu, please work -->
+    <script src="assets/js/easings.js"></script>
+    <script src="assets/js/demo6.js"></script>
+  </body>
 </html>

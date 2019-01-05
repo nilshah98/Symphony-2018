@@ -117,6 +117,7 @@ body {
 }
 
 .eventsbg {
+  width: 100vw;
   background-image: url("../images/bgs/others/events.png") ;
   /*background-attachment: fixed;*/
   background-position: center ;

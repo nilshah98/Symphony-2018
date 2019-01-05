@@ -1,152 +1,299 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
-  <meta name="format-detection" content="telephone=no">
-	<title>Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/effects.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
 
-	<link rel="stylesheet" type="text/css" href="assets/css/effects.css">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
-
-  <script src="assets/js/modernizr-2.6.2.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
-</head>
-<body>
-      <div id="loader-wrapper">
+    <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.js"></script> -->
+  </head>
+  <body class="demo-6">
+    <div id="loader-wrapper">
       <div id="loader">
-        <img src="loaderlogo.svg" width="100%" height="auto">
+        <img src="loaderlogo.svg" width="100%" height="auto" />
         <div class="sp sp-loadbar"></div>
-        <div id="loader_contentx">
-          <span>Loading Awesomeness...</span>
-        </div>
+        <div id="loader_contentx"><span>Loading Awesomeness...</span></div>
       </div>
       <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-
+      <div class="loader-section section-right"></div>
     </div>
-<div id='icons'>
-  <a href="https://twitter.com/kjscesymphony" target="_blank" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
-<a href="https://www.facebook.com/KJSCESymphony/" target="_blank" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
-<a href="https://www.instagram.com/kjscelive/" target="_blank" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a>
-<a href="https://www.youtube.com/KJSCELive" target="_blank" class="icon-button youtube"><i class="fa fa-youtube"></i><span></span></a>
-<!-- <a href="#" class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a> -->
-</div>
-
-<div id="game_link">
-    <a href="http://www.kjsce-symphony.org/game/" target="_blank" class="icon-button">Memory Game</a>
-</div>
-
-<div id="movie_link">
-    <a href="https://www.youtube.com/watch?v=SXaUiK0A1QM&feature=youtu.be" target="_blank" class="icon-button">Symphony 2017 AfterMovie</a>
-</div>
-
-  <div class="container">
-    <!-- This checkbox will give us the toggle behavior, it will be hidden, but functional -->
-    <input id="toggle" type="checkbox">
-
-    <!-- IMPORTANT: Any element that we want to modify when the checkbox state changes go here, being "sibling" of the checkbox element -->
-
-    <!-- This label is tied to the checkbox, and it will contain the toggle "buttons" -->
-    <label class="toggle-container" for="toggle">
-        <!-- If menu is open, it will be the "X" icon, otherwise just a clickable area behind the hamburger menu icon -->
-        <span class="button button-toggle"></span>
-    </label>
-
-    <!-- The nav menu -->
-    <nav class="nav">
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="aboutus.html">About Us</a>
-      <a class="nav-item" href="events.html">Events</a>
-      <a class="nav-item" href="shield.html">KJSCE Shield</a>
-      <!-- <a class="nav-item" href="test.html">Shield ScoreCard</a> -->
-      <a class="nav-item" href="generalrules.html">General Rules</a>
-      <a class="nav-item" href="parvaah.html">Parvaah</a>
-      <a class="nav-item" href="sponsors.html">Sponsors</a>
-      <a class="nav-item" href="contactus.html">Contact Us</a>
-        <!-- <a id="navlogo" class="nav-item" href=""><img src="logo.png" style="height: 70px; width: auto;"></a> -->
-    </nav>
-
-    <!-- Just dummy content like in the animated gif -->
-<div id="navlogo"><a href="index.html"><img src="dummy.png"></a></div>
-</div>
-<div id="scrolling-wrapper">
-  <div class="card" id="card1">
-<div class="floatingleft" id="go_right">
- <a id="right" href="#card2"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-</div>
-
-    <div class="floating" id="homepage_heading">
+    <div id="icons">
+      <a
+        href="https://twitter.com/kjscesymphony"
+        target="_blank"
+        class="icon-button twitter"
+        ><i class="fa fa-twitter"></i><span></span
+      ></a>
+      <a
+        href="https://www.facebook.com/KJSCESymphony/"
+        target="_blank"
+        class="icon-button facebook"
+        ><i class="fa fa-facebook"></i><span></span
+      ></a>
+      <a
+        href="https://www.instagram.com/kjscelive/"
+        target="_blank"
+        class="icon-button instagram"
+        ><i class="fa fa-instagram"></i><span></span
+      ></a>
+      <a
+        href="https://www.youtube.com/KJSCELive"
+        target="_blank"
+        class="icon-button youtube"
+        ><i class="fa fa-youtube"></i><span></span
+      ></a>
+      <!-- <a href="#" class="icon-button pinterest"><i class="fa fa-pinterest"></i><span></span></a> -->
     </div>
-  </div>
-  <div class="card" id="card2">
-    <div class="trigger" id="trigger1"></div>
-    <div class="trigger" id="trigger2"></div>
-    <div class="trigger" id="trigger3"></div>
-    <div class="trigger" id="trigger4"></div>
 
-    <div class="textcontent" id="textcard2">
-      <p>If there were a single person, I beg your pardon, a single robot to ‘robot’-ify luxury, it would be, without a doubt, Bolt. A day in Bolt’s life is replete with maids that feed him the most premium of nuts and bolts, and the finest oil one can find. Quote:- “I got bots in Atlanta, twisting nuts, bolts, and Fanta.” Bolt (2100 AC)</p>
+    <div id="game_link">
+      <a
+        href="http://www.kjsce-symphony.org/game/"
+        target="_blank"
+        class="icon-button"
+        >Memory Game</a
+      >
     </div>
-    <div class="textcontent" id="textcard3">
-      <p>Bob, a full-time caveman and casanova, can always be found swiping mysteriously on his ‘tablet’. It has been rumoured that Bob has taken to a modern day wonder where your chances of finding a suitor depends how you move your finger (no pun intended)! Quote:- “Aaga ugege ba.” Bob  (circa Stone Age)</p>
+
+    <div id="movie_link">
+      <a
+        href="https://www.youtube.com/watch?v=SXaUiK0A1QM&feature=youtu.be"
+        target="_blank"
+        class="icon-button"
+        >Symphony 2017 AfterMovie</a
+      >
     </div>
-    <div class="textcontent" id="textcard4">
-      <p>Cats, catacombs, and coffee, the 3 ‘C’s that personify Cleopatra. She is often grabbing the strongest coffee at Pharaohbucks, and clicking instagrammable selfies of her food. While not doing that, this fashionable diva is seen ruling Egypt with ease. Quote:- “I got 99 problems, but snakes ain’t one.” Cleopatra’s Instagram caption (January, 30 BC)</p>
-    </div>
-    <div class="textcontent" id="textcard5">
-      <p> Jignesh is your typical Gujarati teenager. Jovial and ever-ready to break into Garba, Jignesh’s stock of seemingly inexhaustible enthusiasm remains a source of speculation. Apart from being a full-time garba enthusiast, Jignesh’s admiration of Ms. Pathak’s music tends to outright devotion. Jignesh can be spotted meticulously completing assignments while peacefully sipping chaas.</p>
-    </div>
-      <div class="textcontent floatingvert" id="textcard1"><p>Hover over characters!</p></div>
-  </div>
-  <div class="card" id="card3">
-      <div class="trigger" id="trigger5"></div>
-      <div class="trigger" id="trigger6"></div>
-      <div class="trigger" id="trigger7"></div>
-      <div class="textcontent" id="textcard6">
-        <p>Tony has a penchant for the weird and wonderful. His scientific experiments speak volumes about his genius (literally). With a permanent forlorn face and hair that could be mistaken for a bird’s nest, Tony is and isn’t what you’d call a hot mess. “Hey, what’s that?” Tony (1984, at a science fair)</p>
+
+    <main class="main--demo-6">
+      <div class="content content--demo-6">
+        <!-- HAMBURGER ICON -->
+        <div class="hamburger hamburger--demo-6 js-hover">
+          <div class="hamburger__line hamburger__line--01">
+            <div
+              class="hamburger__line-in hamburger__line-in--01 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--02">
+            <div
+              class="hamburger__line-in hamburger__line-in--02 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--03">
+            <div
+              class="hamburger__line-in hamburger__line-in--03 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--cross01">
+            <div
+              class="hamburger__line-in hamburger__line-in--cross01 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+          <div class="hamburger__line hamburger__line--cross02">
+            <div
+              class="hamburger__line-in hamburger__line-in--cross02 hamburger__line-in--demo-5"
+            ></div>
+          </div>
+        </div>
+
+        <!-- MAIN CONTENT GOES HERE -->
+        <div id="scrolling-wrapper">
+          <div class="card" id="card1">
+            <div class="floatingleft" id="go_right">
+              <a id="right" href="#card2"
+                ><i class="fa fa-chevron-right" aria-hidden="true"></i
+              ></a>
+            </div>
+
+            <div class="floating" id="homepage_heading"></div>
+          </div>
+          <div class="card" id="card2">
+            <div class="trigger" id="trigger1"></div>
+            <div class="trigger" id="trigger2"></div>
+            <div class="trigger" id="trigger3"></div>
+            <div class="trigger" id="trigger4"></div>
+
+            <div class="textcontent" id="textcard2">
+              <p>
+                If there were a single person, I beg your pardon, a single robot
+                to ‘robot’-ify luxury, it would be, without a doubt, Bolt. A day
+                in Bolt’s life is replete with maids that feed him the most
+                premium of nuts and bolts, and the finest oil one can find.
+                Quote:- “I got bots in Atlanta, twisting nuts, bolts, and
+                Fanta.” Bolt (2100 AC)
+              </p>
+            </div>
+            <div class="textcontent" id="textcard3">
+              <p>
+                Bob, a full-time caveman and casanova, can always be found
+                swiping mysteriously on his ‘tablet’. It has been rumoured that
+                Bob has taken to a modern day wonder where your chances of
+                finding a suitor depends how you move your finger (no pun
+                intended)! Quote:- “Aaga ugege ba.” Bob (circa Stone Age)
+              </p>
+            </div>
+            <div class="textcontent" id="textcard4">
+              <p>
+                Cats, catacombs, and coffee, the 3 ‘C’s that personify
+                Cleopatra. She is often grabbing the strongest coffee at
+                Pharaohbucks, and clicking instagrammable selfies of her food.
+                While not doing that, this fashionable diva is seen ruling Egypt
+                with ease. Quote:- “I got 99 problems, but snakes ain’t one.”
+                Cleopatra’s Instagram caption (January, 30 BC)
+              </p>
+            </div>
+            <div class="textcontent" id="textcard5">
+              <p>
+                Jignesh is your typical Gujarati teenager. Jovial and ever-ready
+                to break into Garba, Jignesh’s stock of seemingly inexhaustible
+                enthusiasm remains a source of speculation. Apart from being a
+                full-time garba enthusiast, Jignesh’s admiration of Ms. Pathak’s
+                music tends to outright devotion. Jignesh can be spotted
+                meticulously completing assignments while peacefully sipping
+                chaas.
+              </p>
+            </div>
+            <div class="textcontent floatingvert" id="textcard1">
+              <p>Hover over characters!</p>
+            </div>
+          </div>
+          <div class="card" id="card3">
+            <div class="trigger" id="trigger5"></div>
+            <div class="trigger" id="trigger6"></div>
+            <div class="trigger" id="trigger7"></div>
+            <div class="textcontent" id="textcard6">
+              <p>
+                Tony has a penchant for the weird and wonderful. His scientific
+                experiments speak volumes about his genius (literally). With a
+                permanent forlorn face and hair that could be mistaken for a
+                bird’s nest, Tony is and isn’t what you’d call a hot mess. “Hey,
+                what’s that?” Tony (1984, at a science fair)
+              </p>
+            </div>
+            <div class="textcontent" id="textcard7">
+              <p>
+                Gerald The Knight is called a white knight not because of his
+                benevolence but because of his obsession with vanilla ice-cream.
+                A full-blown ice cream addict, he is ready to binge on tubs of
+                ice cream at the drop of a hat, correction, helmet. Quote:-
+                “Ice-cream, all day, all knight!” The White Knight’s Guide To
+                Post-retirement Life, Touche 8:14
+              </p>
+            </div>
+            <div class="textcontent" id="textcard8">
+              <p>
+                Beware when you're around Kaizer the cyborg because you might
+                mistakenly, as many do, misdenominate him as a human or a robot.
+                This proud and completely digital cyborg is often seen taking
+                offence, or as an astute observer and someone with the knowledge
+                of digital electronics say- getting ‘triggered’, when he is not
+                rallying for various causes.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="card" id="card4"></div> -->
+          <!--   <div class="card" id="card5"></div>
+          <div class="card" id="card6"></div>
+          <div class="card" id="card7"></div>
+          <div class="card" id="card8"></div>
+          <div class="card" id="card9"></div> -->
+        </div>
+
+        <!-- NAVIGATION MENU GOES HERE -->
+        <div class="global-menu">
+          <div class="global-menu__wrap">
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Data Science</a
+            >
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Research</a
+            >
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Case Studies</a
+            >
+            <a class="global-menu__item global-menu__item--demo-6" href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <!-- SVG EFFECT -->
+        <svg
+          class="shape-overlays"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#00c99b" />
+              <stop offset="100%" stop-color="#ff0ea1" />
+            </linearGradient>
+            <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffd392" />
+              <stop offset="100%" stop-color="#ff3898" />
+            </linearGradient>
+            <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#110046" />
+              <stop offset="100%" stop-color="#32004a" />
+            </linearGradient>
+          </defs>
+          <path class="shape-overlays__path"></path>
+          <path class="shape-overlays__path"></path>
+          <path class="shape-overlays__path"></path>
+        </svg>
       </div>
-      <div class="textcontent" id="textcard7">
-        <p>Gerald The Knight is called a white knight not because of his benevolence but because of his obsession with vanilla ice-cream. A full-blown ice cream addict, he is ready to binge on tubs of ice cream at the drop of a hat, correction, helmet. Quote:- “Ice-cream, all day, all knight!” The White Knight’s Guide To Post-retirement Life, Touche 8:14</p>
-      </div>
-      <div class="textcontent" id="textcard8">
-        <p>Beware when you're around Kaizer the cyborg because you might mistakenly, as many do, misdenominate him as a human or a robot. This proud and completely digital cyborg is often seen taking offence, or as an astute observer and someone with the knowledge of digital electronics say- getting ‘triggered’, when he is not rallying for various causes.</p>
-      </div>
+    </main>
 
-  </div>
-  <!-- <div class="card" id="card4"></div> -->
-<!--   <div class="card" id="card5"></div>
-  <div class="card" id="card6"></div>
-  <div class="card" id="card7"></div>
-  <div class="card" id="card8"></div>
-  <div class="card" id="card9"></div> -->
-</div>
-<script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/main.js"></script>
-<script>
-(function() {
-    function scrollHorizontally(e) {
-        e = window.event || e;
-        // console.log(e);
-        // console.log(Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
-        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-        document.getElementById('scrolling-wrapper').scrollLeft -= (delta*80); // Multiplied by 40
-        e.preventDefault();
-    }
-    if (document.getElementById('scrolling-wrapper').addEventListener) {
-        // IE9, Chrome, Safari, Opera
-        document.getElementById('scrolling-wrapper').addEventListener("mousewheel", scrollHorizontally, false);
-        // Firefox
-        document.getElementById('scrolling-wrapper').addEventListener("DOMMouseScroll", scrollHorizontally, false);
-    } else {
-        // IE 6/7/8
-        document.getElementById('scrolling-wrapper').attachEvent("onmousewheel", scrollHorizontally);
-    }
-})();
-</script>
-</body>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      (function() {
+        function scrollHorizontally(e) {
+          e = window.event || e;
+          // console.log(e);
+          // console.log(Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
+          var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+          document.getElementById("scrolling-wrapper").scrollLeft -= delta * 80; // Multiplied by 40
+          e.preventDefault();
+        }
+        if (document.getElementById("scrolling-wrapper").addEventListener) {
+          // IE9, Chrome, Safari, Opera
+          document
+            .getElementById("scrolling-wrapper")
+            .addEventListener("mousewheel", scrollHorizontally, false);
+          // Firefox
+          document
+            .getElementById("scrolling-wrapper")
+            .addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        } else {
+          // IE 6/7/8
+          document
+            .getElementById("scrolling-wrapper")
+            .attachEvent("onmousewheel", scrollHorizontally);
+        }
+      })();
+    </script>
+
+    <script src="assets/js/easings.js"></script>
+    <script src="assets/js/demo6.js"></script>
+  </body>
 </html>
